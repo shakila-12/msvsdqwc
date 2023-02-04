@@ -2,7 +2,7 @@
 # WEEK 0
 ## Day 1: 
 ## Open source tool installation
-## How to install EDA tools for IC design and simulations?
+### How to install EDA tools for IC design and simulations?
 
 **Components of IC design flow (RTL2GDS):**
   1. Logic synthesis: Converts RTL netlist into synthesized gate level netlist.
