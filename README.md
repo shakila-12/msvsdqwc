@@ -8,36 +8,32 @@
 1. Logic synthesis: Converts RTL netlist into synthesized gate level netlist.
    - Tool used : Yosys
    - Yosys not only takes RTL but also timing libs.
-   ![image](https://user-images.githubusercontent.com/123575472/216773027-43e5a42f-7ba1-4fbf-96c1-00f7f075f640.png)
-
- ![image](https://user-images.githubusercontent.com/123575472/216769865-836318e9-893e-4fd1-8e8b-342ec6e895a0.png)
+   
+ ![image](https://user-images.githubusercontent.com/123575472/216773174-3187b947-de2f-4d97-ae14-03ee67120d0d.png)
+ 
 2. Floorplan : We do place preplaced cells and perfom powerplanning.
 3. Placement :In this step we place physical view of logical cells that we get from synthesis.
 4. CTS : Routes the clock to get skew that is specified by the design.
    - Tool used for 2,3,4 (pnr): Graywolf
-   ![image](https://user-images.githubusercontent.com/123575472/216773042-e6de4819-39be-4096-aa20-281ff38dc8b8.png)
+ ![image](https://user-images.githubusercontent.com/123575472/216773265-0497a5b7-3738-4f70-98a9-87d0670b407b.png)
 
- ![image](https://user-images.githubusercontent.com/123575472/216771311-f6777699-d090-4cab-9fa0-e539dc5b482f.png)
 5. Routing : Routes all the components placed in placement stage.(e.g. Maze routing)
-  ![image](https://user-images.githubusercontent.com/123575472/216773057-d60b0d7d-ebd4-4880-bfe4-8af0672c67ab.png)
+   - Tool : Qrouter
+ ![image](https://user-images.githubusercontent.com/123575472/216773297-6e1bcd7d-c0b3-4052-855c-890fcafa2efe.png)
 
- ![image](https://user-images.githubusercontent.com/123575472/216771643-79112f8a-f938-4566-b91d-c3d77a4e5da7.png)
 6. STA: This is the common step perfomed at every stage of IC design flow.
    - Tool: Open timer
-   ![image](https://user-images.githubusercontent.com/123575472/216773072-a1718441-34d4-4b8f-b1f7-6d184be4add8.png)
 
- ![image](https://user-images.githubusercontent.com/123575472/216771845-b7c984e6-33b3-465b-81b3-490c37886124.png)
- 
- To understand above steps, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane)
+  ![image](https://user-images.githubusercontent.com/123575472/216773325-5a10f57c-94b4-4b33-8103-f3587559bc4f.png)
+-  To understand above steps, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane)
+
 **Other tools**
 - Magic : At every stage we can view Layout ,its DRC and routes.
 
-![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)
-   
+  ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)   
 - ngSPICE : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.
- ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
-  
-- Schematic editor/esim :Used to edit schematic for complext circuits.
- ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
 
- - 
+  ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
+- Schematic editor/esim :Used to edit schematic for complext circuits.
+  ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
+ 
