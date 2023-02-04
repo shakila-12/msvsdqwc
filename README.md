@@ -20,10 +20,10 @@
    - Tool: Open timer
  ![image](https://user-images.githubusercontent.com/123575472/216771845-b7c984e6-33b3-465b-81b3-490c37886124.png)
  
- To get brief explanation, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane).
+ To understand above steps, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane)
  **Other tools**
  - Magic : At every stage we can view Layout ,its DRC and routes.
-   ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)
    
  - ngSPICE : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.
   ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
