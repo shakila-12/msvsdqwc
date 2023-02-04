@@ -16,8 +16,19 @@
  ![image](https://user-images.githubusercontent.com/123575472/216771311-f6777699-d090-4cab-9fa0-e539dc5b482f.png)
 5. Routing : Routes all the components placed in placement stage.(e.g. Maze routing)
  ![image](https://user-images.githubusercontent.com/123575472/216771643-79112f8a-f938-4566-b91d-c3d77a4e5da7.png)
-6. STA: This is the common step perfomed at every stage (2,3,4,5).
+6. STA: This is the common step perfomed at every stage of IC design flow.
    - Tool: Open timer
  ![image](https://user-images.githubusercontent.com/123575472/216771845-b7c984e6-33b3-465b-81b3-490c37886124.png)
-
  
+ To get brief explanation, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane).
+ **Other tools**
+ - Magic : At every stage we can view Layout ,its DRC and routes.
+   ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)
+   
+ - ngSPICE : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.
+  ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
+  
+ - Schematic editor/esim :Used to edit schematic for complext circuits.
+  ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
+
+ - 
