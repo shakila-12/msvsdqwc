@@ -22,19 +22,28 @@
    ![image](https://user-images.githubusercontent.com/123575472/216773297-6e1bcd7d-c0b3-4052-855c-890fcafa2efe.png)
 
 6. STA: This is the common step perfomed at every stage of IC design flow.
-   - Tool: Open timer
+   - Tool: Open timer = Open-source high performance timing analysis tool.
 
    ![image](https://user-images.githubusercontent.com/123575472/216773325-5a10f57c-94b4-4b33-8103-f3587559bc4f.png)
    
 -  To understand above steps, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane)
 
-**Other tools**
-- Magic : At every stage we can view Layout ,its DRC and routes.
+**Necessary EDA tools for IC design :**
+- Virtual box : It is used only for windows user , to install Linux OS.
+   - Advantage of installing tools in Linux OS: Tools setup are written based on linux environment. 
+- Magic : At every stage we can view Layout ,its DRC and routes.Hence ,it is VLSI layout editor,extraction and DRC tool.
 
   ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)   
-- ngSPICE : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.
+- Ngspice : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.(Linear and No-linear analyses can be done).
 
   ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
-- Schematic editor/esim :Used to edit schematic for complext circuits.
+     - Note:Synaptic package manager :is present in linux ,which contains tool packages to do installation.
+- Schematic editor/esim :Used to edit schematic with complext circuits like 100's of MOSFETs .Used for spice simulation ,analysis and can handle till PCB deisgn.
+  
   ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
+- Qflow : Tool chain for complete RTL2GDS flow.
+** Steps to install open source EDA tools on Ubuntu 20.04:**
+1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it.
+  ![image](https://user-images.githubusercontent.com/123575472/216793173-636a1c5d-c407-45a5-81f7-4e6be1bfc956.png)
+
  
