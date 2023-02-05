@@ -42,8 +42,14 @@
   
   ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
 - Qflow : Tool chain for complete RTL2GDS flow.
-** Steps to install open source EDA tools on Ubuntu 20.04:**
-1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it.
+**Steps to install open source EDA tools on Ubuntu 20.04:**
+1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it. 
   ![image](https://user-images.githubusercontent.com/123575472/216793173-636a1c5d-c407-45a5-81f7-4e6be1bfc956.png)
+ 
+2. Go to google -> Linux ubuntu iso -> Click on download link shown over there ->Download Ubuntu 20.04.5 LTS (see alternate downloads ,if wanted version is not present) and save in the same driver.
+  - Note: Right click -This PC -> Click on properties -> keep a note on the device specifications like installed RAM , system type. In my case it is : 8GB RAM,64-bit operating system, x64-based processor.
+3. Open vitualbox -> Click on NEW.The following image appears.
+  ![image](https://user-images.githubusercontent.com/123575472/216797280-d88da843-3269-47b4-be26-9886e4bfc00b.png)
+
 
  
