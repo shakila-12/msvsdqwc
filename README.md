@@ -2,7 +2,7 @@
 # WEEK 0
 ## Day 1: 
 ## Open source tool installation
-## How to install EDA tools for IC design and simulations?
+### How to install EDA tools for IC design and simulations?
 
 ### Components of IC design flow (RTL2GDS):
 1. Logic synthesis: Converts RTL netlist into synthesized gate level netlist.
@@ -74,8 +74,26 @@
     ![image](https://user-images.githubusercontent.com/123575472/216800851-dae7a929-4648-4c92-a890-b8bdd31a385a.png)
 
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
-
+    - Note :we can change the display resolution according to our available screen.
 ### Setup ubuntu ,Launch terminal and install git:
+- Reference for the below steps are taken from [here](https://github.com/kunalg123/vsdflow)
+
+- **Steps to install and run on UBUNTU:**
+
+1) sudo apt-get install git
+  ![image](https://user-images.githubusercontent.com/123575472/216808664-0e9ebc04-d999-467a-9378-70c4b043c98c.png)
+
+  - sudo => To run cmd as a administrator(user"root")  use this cmd.
+  - apt-get => get the packages from the command line .
+  - install => is used to install packages by name.
+2) git clone https://github.com/kunalg123/vsdflow.git
+3) cd vsdflow
+4) chmod 777 opensource_eda_tool_install.sh
+5) ./opensource_eda_tool_install.sh 
+**NOTE for freshers : This has been tested on a fresh UBUNTU installtion
+**NOTE for experienced UNIX users : It has lot of sudo apt-get and sudo remove commands, so you might want to review before running
+6) ./vsdflow spi_slave_design_details.csv
+7) ./vsdflow picorv32_design_details.csv
 
 
 
