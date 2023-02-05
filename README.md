@@ -80,12 +80,13 @@
 
 - **Steps to install and run on UBUNTU:**
 
-1) sudo apt-get install git
+1) sudo apt-get install git 
   ![image](https://user-images.githubusercontent.com/123575472/216808664-0e9ebc04-d999-467a-9378-70c4b043c98c.png)
 
   - sudo => To run cmd as a administrator(user"root")  use this cmd.
   - apt-get => get the packages from the command line .
   - install => is used to install packages by name.
-
-
+  - df => report file system disk space usage
+  - -k => represents like block-size=1K
+  - -h =>print sizes in human readable format (e.g., 1K 234M 2G)
  
