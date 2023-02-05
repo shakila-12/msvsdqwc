@@ -86,15 +86,6 @@
   - sudo => To run cmd as a administrator(user"root")  use this cmd.
   - apt-get => get the packages from the command line .
   - install => is used to install packages by name.
-2) git clone https://github.com/kunalg123/vsdflow.git
-3) cd vsdflow
-4) chmod 777 opensource_eda_tool_install.sh
-5) ./opensource_eda_tool_install.sh 
-**NOTE for freshers : This has been tested on a fresh UBUNTU installtion
-**NOTE for experienced UNIX users : It has lot of sudo apt-get and sudo remove commands, so you might want to review before running
-6) ./vsdflow spi_slave_design_details.csv
-7) ./vsdflow picorv32_design_details.csv
-
 
 
  
