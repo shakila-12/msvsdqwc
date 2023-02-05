@@ -2,9 +2,9 @@
 # WEEK 0
 ## Day 1: 
 ## Open source tool installation
-### How to install EDA tools for IC design and simulations?
+## How to install EDA tools for IC design and simulations?
 
-**Components of IC design flow (RTL2GDS):**
+### Components of IC design flow (RTL2GDS):
 1. Logic synthesis: Converts RTL netlist into synthesized gate level netlist.
    - Tool used : Yosys
    - Yosys not only takes RTL but also timing libs.
@@ -28,22 +28,22 @@
    
 -  To understand above steps, click [HERE](https://github.com/shakila-12/Physical-design-workshop-using-openlane)
 
-**Necessary EDA tools for IC design :**
-- Virtual box : It is used only for windows user , to install Linux OS.
+### Necessary EDA tools for IC design :
+- **Virtual box :** It is used only for windows user , to install Linux OS.
    - Advantage of installing tools in Linux OS: Tools setup are written based on linux environment. 
-- Magic : At every stage we can view Layout ,its DRC and routes.Hence ,it is VLSI layout editor,extraction and DRC tool.
+- **Magic :** At every stage we can view Layout ,its DRC and routes.Hence ,it is VLSI layout editor,extraction and DRC tool.
 
   ![image](https://user-images.githubusercontent.com/123575472/216772470-9a139254-48ed-4af1-992b-e50370f2ef06.png)   
-- Ngspice : It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.(Linear and No-linear analyses can be done).
+- **Ngspice :** It is used for spice simulation and checks impact of parasitics. Also , we can extract netlist and check the diferences present in pre-layout and post-layout spice simulation.(Linear and No-linear analyses can be done).
 
   ![image](https://user-images.githubusercontent.com/123575472/216772791-deff5888-0045-4d0a-b1ac-18be94e07d0a.png)
-     - Note:Synaptic package manager :is present in linux ,which contains tool packages to do installation.
-- Schematic editor/esim :Used to edit schematic with complext circuits like 100's of MOSFETs .Used for spice simulation ,analysis and can handle till PCB deisgn.
+     - Note: Synaptic package manager is present in linux ,which contain tool packages .
+- **Schematic editor/esim :** Used to edit schematic with complext circuits like 100's of MOSFETs .Used for spice simulation ,analysis and can handle till PCB deisgn.
   
   ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
-- Qflow : Tool chain for complete RTL2GDS flow.
+- **Qflow :** Tool chain for complete RTL2GDS flow.
 
-**Steps to install open source EDA tools on Ubuntu 20.04:**
+### Steps to install open source EDA tools on Ubuntu 20.04:
 1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it. 
   ![image](https://user-images.githubusercontent.com/123575472/216793173-636a1c5d-c407-45a5-81f7-4e6be1bfc956.png)
  
@@ -64,16 +64,18 @@
   
   ![image](https://user-images.githubusercontent.com/123575472/216800533-29571a01-8991-4aa1-b434-60dbebcd2d16.png)
 
-7. Next ,test the keyboard(English US) and continue.
+7. Next ,test the keyboard(English US) and then continue.
  
  ![image](https://user-images.githubusercontent.com/123575472/216800622-9a421ec4-c4fa-43d9-a569-f94455763af3.png)
 
 8. Click on install now
    -  Note: Go with default step as shown in picture.
  
- ![image](https://user-images.githubusercontent.com/123575472/216800851-dae7a929-4648-4c92-a890-b8bdd31a385a.png)
+    ![image](https://user-images.githubusercontent.com/123575472/216800851-dae7a929-4648-4c92-a890-b8bdd31a385a.png)
 
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
+
+### Setup ubuntu ,Launch terminal and install git:
 
 
 
