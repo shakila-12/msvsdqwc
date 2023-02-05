@@ -42,6 +42,7 @@
   
   ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
 - Qflow : Tool chain for complete RTL2GDS flow.
+
 **Steps to install open source EDA tools on Ubuntu 20.04:**
 1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it. 
   ![image](https://user-images.githubusercontent.com/123575472/216793173-636a1c5d-c407-45a5-81f7-4e6be1bfc956.png)
@@ -49,15 +50,20 @@
 2. Go to google -> Linux ubuntu iso -> Click on download link shown over there ->Download ubuntu-20.04.5-desktop-amd64.iso (see alternative downloads ,if wanted version is not present) and save in the same driver.
   - Note: Right click -This PC -> Click on properties -> keep a note on the device specifications like installed RAM , system type. In my case it is : 8GB RAM,64-bit operating system, x64-based processor.
 3. Open vitualbox -> Click on NEW.The following image appears.Next, make sure we goahead with atleast 4GB RAM and create virtual harddisk with 50GB.
+  
   ![image](https://user-images.githubusercontent.com/123575472/216797280-d88da843-3269-47b4-be26-9886e4bfc00b.png)
+
 4. Choose disk image to the optical drive(it is a pointer to ubuntu iso) as shown below.
   ![image](https://user-images.githubusercontent.com/123575472/216799977-69e2e3e2-b420-4ece-adff-cabe53653bdd.png)
+
 5. Click on START .It starts machine which has Linux OS inside windows.
   
   ![image](https://user-images.githubusercontent.com/123575472/216800125-21172f37-071d-49eb-b522-69f692e91ea6.png)
+
 6. Once the above step is done, the below image appears.Click on Install ubuntu.
   
   ![image](https://user-images.githubusercontent.com/123575472/216800533-29571a01-8991-4aa1-b434-60dbebcd2d16.png)
+
 7. Next ,test the keyboard(English US) and continue.
  
  ![image](https://user-images.githubusercontent.com/123575472/216800622-9a421ec4-c4fa-43d9-a569-f94455763af3.png)
@@ -66,6 +72,7 @@
    -  Note: Go with default step as shown in picture.
  
  ![image](https://user-images.githubusercontent.com/123575472/216800851-dae7a929-4648-4c92-a890-b8bdd31a385a.png)
+
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
 
 
