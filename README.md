@@ -101,20 +101,28 @@ $  sudo make install
 - Magic installation:
   ![image](https://user-images.githubusercontent.com/123575472/216885988-7d58dad5-6dd0-4e54-a720-e513323405e3.png)
   ![image](https://user-images.githubusercontent.com/123575472/216886142-e2f25aac-a1cc-46c5-bdcb-d18c1db26f38.png)
-  ![image](https://user-images.githubusercontent.com/123575472/216886246-b134582a-e9b0-4b38-ac9f-1e1e7ceb2010.png)
-  ![image](https://user-images.githubusercontent.com/123575472/216886393-568189b9-b74d-4500-97bd-ef842930e618.png)
-  ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
-  ![image](https://user-images.githubusercontent.com/123575472/216886597-f9e362cb-9f89-497c-859e-27fb9fddbe91.png)
+  
+   ```
+     The above error is due to missing C compiler . So, check whether compiler is installed or not.For that ,use the below command.
+                   - $ gcc --version
+                   - If no gcc, install it using  :$ sudo apt-get install gcc
+                   - After this ,run the command i.e  $sudo apt-get install build-essential
+     ``` 
+ To know about this build-essential , click[here](https://itslinuxfoss.com/build-essential-package-ubuntu-install/#1).
+                 
+  
+ ![image](https://user-images.githubusercontent.com/123575472/216886246-b134582a-e9b0-4b38-ac9f-1e1e7ceb2010.png)
+ ![image](https://user-images.githubusercontent.com/123575472/216886393-568189b9-b74d-4500-97bd-ef842930e618.png)
+ ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
+ ![image](https://user-images.githubusercontent.com/123575472/216886597-f9e362cb-9f89-497c-859e-27fb9fddbe91.png)
 
 - Again run ./configure 
  
   ![image](https://user-images.githubusercontent.com/123575472/216887242-12d340ea-b2f4-43ca-9872-2f6b09d0e005.png)
   ![image](https://user-images.githubusercontent.com/123575472/216889318-71898337-608a-46a7-bea1-d413e6a42085.png)
-   ```
+  ```
    sudo apt-get update
    sudo apt-get upgrade
    sudo apt-get install xorg
-   ```
-- Repeat the steps and fix the errors and finally do configure[^1]
-## References
-[^1]:https://techglimpse.com/no-acceptable-c-compiler-found-fix/
+```
+
