@@ -90,7 +90,7 @@
   - -h =>print sizes in human readable format (e.g., 1K 234M 2G)
  ```
  ### Day-2 : Install magic and SKY130 PDKs
- - Reference taken from [chapter 0 of PV GitHub repo] (https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
+ - Reference taken from [chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
  ```
 $  git clone git://opencircuitdesign.com/magic
 $  cd magic
@@ -98,3 +98,12 @@ $	./configure
 $  make
 $  sudo make install
 ```
+- Magic installation:
+  ![image](https://user-images.githubusercontent.com/123575472/216885988-7d58dad5-6dd0-4e54-a720-e513323405e3.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216886142-e2f25aac-a1cc-46c5-bdcb-d18c1db26f38.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216886246-b134582a-e9b0-4b38-ac9f-1e1e7ceb2010.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216886393-568189b9-b74d-4500-97bd-ef842930e618.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216886597-f9e362cb-9f89-497c-859e-27fb9fddbe91.png)
+
+ Again run ./configure
