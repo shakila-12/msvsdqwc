@@ -106,7 +106,8 @@ $  sudo make install
   ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
   ![image](https://user-images.githubusercontent.com/123575472/216886597-f9e362cb-9f89-497c-859e-27fb9fddbe91.png)
 
- Again run ./configure
+- Again run ./configure 
  
- ![image](https://user-images.githubusercontent.com/123575472/216887242-12d340ea-b2f4-43ca-9872-2f6b09d0e005.png)
-
+  ![image](https://user-images.githubusercontent.com/123575472/216887242-12d340ea-b2f4-43ca-9872-2f6b09d0e005.png)
+  ![image](https://user-images.githubusercontent.com/123575472/216889318-71898337-608a-46a7-bea1-d413e6a42085.png)
+- Repeat the steps and fix the errors and finally do configure.
