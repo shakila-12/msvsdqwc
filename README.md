@@ -115,8 +115,8 @@ $  sudo make install
    sudo apt-get upgrade
    sudo apt-get install xorg
 ```
-- Repeat the steps and fix the errors and finally do configure[^fn1].
+Repeat the steps and fix the errors and finally do configure([^1]:https://techglimpse.com/no-acceptable-c-compiler-found-fix/)
 
 ## References
 
-[^fn1].https://techglimpse.com/no-acceptable-c-compiler-found-fix/
+[^1]:https://techglimpse.com/no-acceptable-c-compiler-found-fix/
