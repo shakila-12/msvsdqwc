@@ -76,15 +76,14 @@
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
     - Note :we can change the display resolution according to our available screen.
 ### Setup ubuntu ,Launch terminal and install git:
-- Reference for the below steps are taken from [here](https://github.com/kunalg123/vsdflow)
 
 - **Steps to install and run on UBUNTU:**
 
-1) sudo apt-get install git [^1]
+1) sudo apt-get install git 
  
  ![image](https://user-images.githubusercontent.com/123575472/216808664-0e9ebc04-d999-467a-9378-70c4b043c98c.png)
 
-  - sudo => To run cmd as a administrator(user"root")  use this cmd.
+  - sudo => To run cmd as a administrator(user"root")  we use this cmd.
   - apt-get => get the packages from the command line .
   - install => is used to install packages by name.
   - df => report file system disk space usage
