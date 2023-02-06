@@ -43,7 +43,7 @@
   ![image](https://user-images.githubusercontent.com/123575472/216772868-a4e31003-44ca-4061-b91b-bd6919c0432f.png)
 - **Qflow :** Tool chain for complete RTL2GDS flow.
 
-### Steps to install open source EDA tools on Ubuntu 20.04:
+### Steps to install Ubuntu 20.04:
 1. Go to google -> Virtual box -> Downloads -> Windows host -> download and save the file in the driver -> Click on the saved file ,proceed with default steps and install it. 
   ![image](https://user-images.githubusercontent.com/123575472/216793173-636a1c5d-c407-45a5-81f7-4e6be1bfc956.png)
  
@@ -75,18 +75,27 @@
 
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
     - Note :we can change the display resolution according to our available screen.
-### Setup ubuntu ,Launch terminal and install git:
 
-- **Steps to install and run on UBUNTU:**
+### Steps to install open source EDA tools on Ubuntu 20.04:
 
 1) sudo apt-get install git 
  
  ![image](https://user-images.githubusercontent.com/123575472/216808664-0e9ebc04-d999-467a-9378-70c4b043c98c.png)
-
+ ```
   - sudo => To run cmd as a administrator(user"root")  we use this cmd.
   - apt-get => get the packages from the command line .
   - install => is used to install packages by name.
   - df => report file system disk space usage
   - -k => represents like block-size=1K
   - -h =>print sizes in human readable format (e.g., 1K 234M 2G)
+ ```
+ ### Day-2 : Install magic and SKY130 PDKs
  
+ - Reference taken from [chapter 0 of PV GitHub repo] (https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
+ ```
+$  git clone git://opencircuitdesign.com/magic
+$  cd magic
+$	 ./configure
+$  make
+$  sudo make install
+```
