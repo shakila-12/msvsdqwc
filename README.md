@@ -137,4 +137,10 @@ $  sudo make install
 
 ![image](https://user-images.githubusercontent.com/123575472/217154080-eb2ff8d3-91f8-49b6-a5d4-4aaa8c52c0fc.png)
 
-The above commands are used to fix some errors and then run make and sudo make install. Thus ,Magic is installed.
+The above commands are used to fix some errors and then follow below commands.
+                                
+                                $ make 
+                                $sudo make install
+                                
+ Thus ,Magic is installed.
+
