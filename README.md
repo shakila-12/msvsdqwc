@@ -1,7 +1,6 @@
 # Mixed-signal PD Research Program
 # WEEK 0
-## Day 1: 
-## Open source tool installation
+## Day 1:  Open source tool installation
 ### How to install EDA tools for IC design and simulations?
 
 ### Components of IC design flow (RTL2GDS):
@@ -88,7 +87,7 @@
   - -k => represents like block-size=1K
   - -h =>print sizes in human readable format (e.g., 1K 234M 2G)
  ```
- ### Day-2 : Install magic and SKY130 PDKs
+ ## Day-2 : Install magic and SKY130 PDKs
  - Reference taken from [chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
  - Magic Installation steps:
  ```
