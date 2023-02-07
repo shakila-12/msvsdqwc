@@ -101,12 +101,12 @@ $  sudo make install
   ![image](https://user-images.githubusercontent.com/123575472/216885988-7d58dad5-6dd0-4e54-a720-e513323405e3.png)
   ![image](https://user-images.githubusercontent.com/123575472/216886142-e2f25aac-a1cc-46c5-bdcb-d18c1db26f38.png)
   
-   ```
+      ```
      The above error is due to missing C compiler . So, check whether compiler is installed or not.For that ,use the below command.
                    - $ gcc --version
                    - If no gcc, install it using  :$ sudo apt-get install gcc
-                   - After this ,run the command i.e  $sudo apt-get install build-essential
-     ``` 
+                   - After this ,run the command i.e  $sudo apt-get install build-essential ``` 
+  
  To know about this build-essential , click[here](https://itslinuxfoss.com/build-essential-package-ubuntu-install/#1).
                  
   
