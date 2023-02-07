@@ -90,6 +90,7 @@
  ```
  ### Day-2 : Install magic and SKY130 PDKs
  - Reference taken from [chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
+ - Magic Installation steps:
  ```
 $  git clone git://opencircuitdesign.com/magic
 $  cd magic
@@ -97,7 +98,6 @@ $	./configure
 $  make
 $  sudo make install
 ```
-- Magic installation:
   ![image](https://user-images.githubusercontent.com/123575472/216885988-7d58dad5-6dd0-4e54-a720-e513323405e3.png)
   ![image](https://user-images.githubusercontent.com/123575472/216886142-e2f25aac-a1cc-46c5-bdcb-d18c1db26f38.png)
   
@@ -123,7 +123,7 @@ $  sudo make install
    To fix the above error ,i tried  to remove the directory as shown below and hence it worked.
    
    ![image](https://user-images.githubusercontent.com/123575472/217120672-bd013840-ee4e-4dd0-8f6a-d6d680fbef4a.png)
-```
+  ```
    sudo rm -rf /var/cache/apt/archives/
    sudo apt-get install libx11-dev
    sudo apt-get install freeglut3-dev
@@ -132,3 +132,6 @@ $  sudo make install
      This package contains the development libraries, header files needed by programs that want to compile with Cairo.)
    sudo apt-get install tcl-dev
    sudo apt-get install tk-dev
+   sudo apt-get install libxi-dev
+  ```
+ The above commands are used to fix some errors and then run make and sudo make install. Thus ,Magic is installed.
