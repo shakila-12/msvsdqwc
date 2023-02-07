@@ -120,9 +120,8 @@ $  sudo make install
  
   ![image](https://user-images.githubusercontent.com/123575472/216887242-12d340ea-b2f4-43ca-9872-2f6b09d0e005.png)
   ![image](https://user-images.githubusercontent.com/123575472/216889318-71898337-608a-46a7-bea1-d413e6a42085.png)
-  ```
-   sudo apt-get update
-   sudo apt-get upgrade
-   sudo apt-get install xorg
-```
+  ![image](https://user-images.githubusercontent.com/123575472/217119455-3788454e-b5b2-4878-9ef0-53a5af23abe1.png)
+   To fix the above error ,i tried  to remove the directory as shown below and hence it worked.
+   
+   ![image](https://user-images.githubusercontent.com/123575472/217120672-bd013840-ee4e-4dd0-8f6a-d6d680fbef4a.png)
 
