@@ -129,3 +129,5 @@ $  sudo make install
    sudo apt-get install libx11-dev
    sudo apt-get install freeglut3-dev
    sudo apt-get install libcairo2-dev
+   sudo apt-get install tcl-dev
+   sudo apt-get install tk-dev
