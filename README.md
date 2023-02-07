@@ -7,7 +7,6 @@
 ### Components of IC design flow (RTL2GDS):
 1. Logic synthesis: Converts RTL netlist into synthesized gate level netlist.
    - Tool used : Yosys
-   - Yosys not only takes RTL but also timing libs.
      
      ![image](https://user-images.githubusercontent.com/123575472/216773174-3187b947-de2f-4d97-ae14-03ee67120d0d.png)
 2. Floorplan : We do place preplaced cells and perfom powerplanning.
@@ -129,5 +128,7 @@ $  sudo make install
    sudo apt-get install libx11-dev
    sudo apt-get install freeglut3-dev
    sudo apt-get install libcairo2-dev
+   (Note: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends.
+     This package contains the development libraries, header files needed by programs that want to compile with Cairo.)
    sudo apt-get install tcl-dev
    sudo apt-get install tk-dev
