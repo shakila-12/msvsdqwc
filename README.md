@@ -89,7 +89,9 @@
  ```
  ## Day-2 : Install magic and SKY130 PDKs
  - Reference taken from [chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
- - Magic Installation steps:
+ - To know about Magic Layout tool, click [this](http://opencircuitdesign.com/magic/)
+ - **Magic Installation steps:**
+ 
  ```
 $  git clone git://opencircuitdesign.com/magic
 $  cd magic
