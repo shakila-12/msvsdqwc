@@ -124,4 +124,8 @@ $  sudo make install
    To fix the above error ,i tried  to remove the directory as shown below and hence it worked.
    
    ![image](https://user-images.githubusercontent.com/123575472/217120672-bd013840-ee4e-4dd0-8f6a-d6d680fbef4a.png)
-
+```
+   sudo rm -rf /var/cache/apt/archives/
+   sudo apt-get install libx11-dev
+   sudo apt-get install freeglut3-dev
+   sudo apt-get install libcairo2-dev
