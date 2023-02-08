@@ -169,11 +169,16 @@ sudo apt-get install libx11-6
 ![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
 
 - **ngspice**:
+- 
+Install steps:
+
+After downloading the tarball from https://ngspice.sourceforge.io/download.html ,extract it using below command and  see the ngspice manual [chapt. 32](https://ngspice.sourceforge.io/docs/ngspice-39-manual.pdf) for instructions on compilation and installation of ngspice. 
 
 learn tar from [here](https://linuxhint.com/linux-tar-command/)
 
 mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
 
 ![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
-
-sudo apt-get install libxaw7-dev
+./configure --enable-xspice --enable-osdi --disable-debug --with-readline=yes
+ $ sudo apt-get install libxaw7-dev
+$ apt-cache search readline( it is used to look at the available libraries )
