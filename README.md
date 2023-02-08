@@ -159,5 +159,6 @@ cd xschem-src/
      sudo apt-get install bison
    sudo apt-get install libxpm-dev
 
+![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
 
 
