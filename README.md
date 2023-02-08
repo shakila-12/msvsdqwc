@@ -182,3 +182,5 @@ mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
 ./configure --enable-xspice --enable-osdi --disable-debug --with-readline=yes
  $ sudo apt-get install libxaw7-dev
 $ apt-cache search readline( it is used to look at the available libraries )
+
+
