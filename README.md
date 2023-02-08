@@ -171,3 +171,8 @@ sudo apt-get install libx11-6
 - **ngspice**:
 
 learn tar from [here](https://linuxhint.com/linux-tar-command/)
+
+mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
+
+
+sudo apt-get install libxaw7-dev
