@@ -147,4 +147,5 @@ The above commands are used to fix some errors and then follow below commands.
  ![image](https://user-images.githubusercontent.com/123575472/217190892-a8679fd5-4bcc-423e-99e2-ed320310aff5.png)
                              
  Thus ,Magic is installed.
+![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
 
