@@ -152,4 +152,12 @@ The above commands are used to fix some errors and then follow below commands.
 
 ![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
 
+git clone https://github.com/StefanSchippers/xschem.git xschem-src
+cd xschem-src/
+ ./configure
+ sudo apt-get install flex
+     sudo apt-get install bison
+   sudo apt-get install libxpm-dev
+
+
 
