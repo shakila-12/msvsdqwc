@@ -174,5 +174,6 @@ learn tar from [here](https://linuxhint.com/linux-tar-command/)
 
 mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
 
+![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
 sudo apt-get install libxaw7-dev
