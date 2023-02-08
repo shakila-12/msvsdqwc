@@ -168,6 +168,6 @@ sudo apt-get install libx11-6
 
 ![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
 
+- **ngspice**:
 
-
-
+learn tar from [here](https://linuxhint.com/linux-tar-command/)
