@@ -106,7 +106,8 @@ $  sudo make install
      The above error is due to missing C compiler . So, check whether compiler is installed or not.For that ,use the below command.
                    - $ gcc --version
                    - If no gcc, install it using  :$ sudo apt-get install gcc
-                   - After this ,run the command i.e  $sudo apt-get install build-essential ``` 
+                   - After this ,run the command i.e  $sudo apt-get install build-essential 
+                   ``` 
   
  To know about this build-essential , click[here](https://itslinuxfoss.com/build-essential-package-ubuntu-install/#1).
                  
@@ -198,7 +199,7 @@ Please note that to view the simulation graphs of ngspice, xterm is required and
 $ sudo apt-get update
 $ sudo apt-get install xterm
 
--**Open_PDK:**
+- **Open_PDK:**
 
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
@@ -211,8 +212,45 @@ $  make
 $  sudo make install
 
 ```
-- Note: For PDK manual installation ,refer the two links:
+- For PDK manual installation ,reference to be the taken is given in  two links:
                  [link1](http://opencircuitdesign.com/open_pdks/index.html),
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
                  
+
+- **ALIGN**:
+
+To understand the flow, refer the following [repo.](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
+      
+  **Commands to install ALIGN tool:**
+```
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+git clone https://github.com/ALIGN-analoglayout/ALIGN-public
+cd ALIGN-public
+
+#Create a Python virtualenv
+python3 -m venv general
+source general/bin/activate
+python -m pip install pip --upgrade
+
+# Install ALIGN as a USER
+pip install -v .
+
+# Install ALIGN as a DEVELOPER
+pip install -e .
+
+pip install setuptools wheel pybind11 scikit-build cmake ninja
+pip install -v -e .[test] --no-build-isolation
+pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
+
+```
+```
+   - Note:Make sure that you installed pip and venv packages:
+
+      $ sudo apt install python3-pip
+      $ sudo apt install python3-venv
+      
+  ```
+
+   
 
