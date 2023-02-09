@@ -213,7 +213,7 @@ $  sudo make install
 
 ```
 - For PDK manual installation ,reference to be the taken is given in  two links:
-                 [link1](http://opencircuitdesign.com/open_pdks/index.html),
+                 [link1](http://www.opencircuitdesign.com/open_pdks/install.html),
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
                  
 
