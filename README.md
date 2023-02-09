@@ -151,6 +151,7 @@ The above commands are used to fix some errors and then follow below commands.
 
 
 ![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
+- **Xschem**:
 
 git clone https://github.com/StefanSchippers/xschem.git xschem-src
 cd xschem-src/
@@ -182,8 +183,14 @@ mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
  $ mkdir release
  $ cd release
  $ ../configure  --with-x --with-readline=yes --disable-debug --enable-xspice 
+ $ sudo apt-get install libxaw7-dev
+Rerun the config.
  $ make
  $ sudo make install
+ 
+   apt-cache search readline (used to look at the available libraries )
+   sudo apt-get install libreadline8 libreadline-dev
+
 ![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
 Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using.
