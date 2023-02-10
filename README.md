@@ -156,8 +156,8 @@ The above commands are used to fix some errors and then follow below commands.
 
 git clone https://github.com/StefanSchippers/xschem.git xschem-src
 cd xschem-src/
- ./configure
- sudo apt-get install flex
+./configure
+sudo apt-get install flex
      sudo apt-get install bison
    sudo apt-get install libxpm-dev
    sudo apt-get install libx11-xcb-dev 
