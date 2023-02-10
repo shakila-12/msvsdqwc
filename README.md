@@ -240,10 +240,10 @@ python3 -m venv general
 source general/bin/activate
 python -m pip install pip --upgrade
 
-# Install ALIGN as a USER
+#Install ALIGN as a USER
 pip install -v .
 
-# Install ALIGN as a DEVELOPER
+#Install ALIGN as a DEVELOPER
 pip install -e .
 
 pip install setuptools wheel pybind11 scikit-build cmake ninja
@@ -251,6 +251,7 @@ pip install -v -e .[test] --no-build-isolation
 pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
 
 ```
+
 ```
    - Note:Make sure that you installed pip and venv packages:
 
