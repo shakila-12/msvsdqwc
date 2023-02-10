@@ -158,15 +158,15 @@ The above commands are used to fix some errors and then follow below commands.
 
 ![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
 - **Xschem**:
-
-git clone https://github.com/StefanSchippers/xschem.git xschem-src
-cd xschem-src/
-./configure
-sudo apt-get install flex
-     sudo apt-get install bison
-   sudo apt-get install libxpm-dev
-   sudo apt-get install libx11-xcb-dev 
-sudo apt-get install libx11-6
+```
+ git clone https://github.com/StefanSchippers/xschem.git xschem-src
+ cd xschem-src/
+ ./configure
+ sudo apt-get install flex
+ sudo apt-get install bison
+ sudo apt-get install libxpm-dev
+ sudo apt-get install libx11-xcb-dev 
+ sudo apt-get install libx11-6
    ./configure 
     make
     sudo make install
@@ -179,24 +179,25 @@ sudo apt-get install libx11-6
 - 
 Install steps:
 
-After downloading the tarball from https://ngspice.sourceforge.io/download.html ,extract it using below command and  see the ngspice manual [chapt. 32](https://ngspice.sourceforge.io/docs/ngspice-39-manual.pdf) for instructions on compilation and installation of ngspice. 
+After downloading the tarball from https://ngspice.sourceforge.io/download.html ,extract it using below command and  
+see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl)
+ for instructions on compilation and installation of ngspice. 
 
-
-tar -zxvf ngspice-39.tar.gz
-             learn tar from [here](https://linuxhint.com/linux-tar-command/)
-mv /home/shakila12/Downloads/ngspice-39 /home/shakila12/Desktop/pd_rp/tools
- $ cd ngspice-39
+```
+ $ tar -zxvf ngspice-37.tar.gz            
+ $ cd ngspice-37
  $ mkdir release
  $ cd release
- $ ../configure  --with-x --with-readline=yes --disable-debug --enable-xspice 
- $ sudo apt-get install libxaw7-dev
-Rerun the config.
+ $ ../configure  --with-x --with-readline=yes --disable-debug 
  $ make
  $ sudo make install
+ ```
+ ```
+   $ sudo apt-get install libxaw7-dev
+   $ apt-cache search readline (used to look at the available libraries )
+   $ sudo apt-get install libreadline8 libreadline-dev
+ ```
  
-   apt-cache search readline (used to look at the available libraries )
-   sudo apt-get install libreadline8 libreadline-dev
-
 ![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
 Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using.
