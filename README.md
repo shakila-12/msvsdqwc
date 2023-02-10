@@ -130,13 +130,11 @@ $  sudo make install
    $ sudo apt-get install m4
    $ sudo apt-get install tcsh
    $ sudo apt-get install csh
-   sudo apt-get install libx11-dev
-   sudo apt-get install freeglut3-dev
-   sudo apt-get install libcairo2-dev
-   (Note: Cairo is a multi-platform library providing anti-aliased vector-based rendering for multiple target backends.
-     This package contains the development libraries, header files needed by programs that want to compile with Cairo.)
-   sudo apt-get install tcl-dev
-   sudo apt-get install tk-dev
+   $  sudo apt-get install libx11-dev
+   $ sudo apt-get install freeglut3-dev
+   $ sudo apt-get install libcairo2-dev
+   $ sudo apt-get install tcl-dev
+   $ sudo apt-get install tk-dev
    $ sudo apt-get install mesa-common-dev libglu1-mesa-dev
    $ sudo apt-get install libncurses-dev
    
@@ -150,33 +148,34 @@ The above commands are used to fix some errors and then follow below commands.
                                 $sudo make install
                                 $magic gui 
                               
- ![image](https://user-images.githubusercontent.com/123575472/217190892-a8679fd5-4bcc-423e-99e2-ed320310aff5.png)
+![image](https://user-images.githubusercontent.com/123575472/217190892-a8679fd5-4bcc-423e-99e2-ed320310aff5.png)
                              
  Thus ,Magic is installed.
 ![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
 
 
 ![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
-- **Xschem**:
-```
- git clone https://github.com/StefanSchippers/xschem.git xschem-src
- cd xschem-src/
- ./configure
- sudo apt-get install flex
- sudo apt-get install bison
- sudo apt-get install libxpm-dev
- sudo apt-get install libx11-xcb-dev 
- sudo apt-get install libx11-6
-   ./configure 
-    make
-    sudo make install
-    xschem gui
 
+- **Xschem**:
+   ```
+    $ git clone https://github.com/StefanSchippers/xschem.git xschem-src
+    $ cd xschem-src/
+    $ ./configure
+    $ sudo apt-get install flex
+    $ sudo apt-get install bison
+    $ sudo apt-get install libxpm-dev
+    $ sudo apt-get install libx11-xcb-dev 
+    $ sudo apt-get install libx11-6
+    $ ./configure 
+    $ make
+    $ sudo make install
+    $ xschem gui
+   ```
 
 ![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
 
 - **ngspice**:
-- 
+
 Install steps:
 
 After downloading the [tarball](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download),extract it using below command and  
@@ -193,24 +192,25 @@ see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl)
  
 ```
 
-```
-   $ sudo apt-get install libxaw7-dev
-   $ apt-cache search readline (used to look at the available libraries )
-   $ sudo apt-get install libreadline8 libreadline-dev
- ```
+
+            $ sudo apt-get install libxaw7-dev
+            $ apt-cache search readline (used to look at the available libraries )
+            $ sudo apt-get install libreadline8 libreadline-dev
+            $ sudo apt-get update
+            $ sudo apt-get install xterm
  
 ![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
 Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using.
 
-$ sudo apt-get update
-$ sudo apt-get install xterm
+
 
 - **Open_PDK:**
 
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
 Install steps:
+
 ```
 $  git clone git://opencircuitdesign.com/open_pdks
 $  open_pdks
