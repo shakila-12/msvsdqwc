@@ -127,6 +127,9 @@ $  sudo make install
    ![image](https://user-images.githubusercontent.com/123575472/217120672-bd013840-ee4e-4dd0-8f6a-d6d680fbef4a.png)
   ```
    sudo rm -rf /var/cache/apt/archives/
+   $ sudo apt-get install m4
+   $ sudo apt-get install tcsh
+   $ sudo apt-get install csh
    sudo apt-get install libx11-dev
    sudo apt-get install freeglut3-dev
    sudo apt-get install libcairo2-dev
@@ -134,7 +137,9 @@ $  sudo make install
      This package contains the development libraries, header files needed by programs that want to compile with Cairo.)
    sudo apt-get install tcl-dev
    sudo apt-get install tk-dev
-   sudo apt-get install libxi-dev
+   $ sudo apt-get install mesa-common-dev libglu1-mesa-dev
+   $ sudo apt-get install libncurses-dev
+   
   ```
 
 ![image](https://user-images.githubusercontent.com/123575472/217154080-eb2ff8d3-91f8-49b6-a5d4-4aaa8c52c0fc.png)
