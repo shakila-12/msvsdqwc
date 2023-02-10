@@ -179,9 +179,8 @@ The above commands are used to fix some errors and then follow below commands.
 - 
 Install steps:
 
-After downloading the tarball from https://ngspice.sourceforge.io/download.html ,extract it using below command and  
-see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl)
- for instructions on compilation and installation of ngspice. 
+After downloading the [tarball](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download),extract it using below command and  
+see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl) for instructions on compilation and installation of ngspice. 
 
 ```
  $ tar -zxvf ngspice-37.tar.gz            
@@ -191,8 +190,10 @@ see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl)
  $ ../configure  --with-x --with-readline=yes --disable-debug 
  $ make
  $ sudo make install
- ```
- ```
+ 
+```
+
+```
    $ sudo apt-get install libxaw7-dev
    $ apt-cache search readline (used to look at the available libraries )
    $ sudo apt-get install libreadline8 libreadline-dev
