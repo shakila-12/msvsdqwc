@@ -75,8 +75,10 @@
     - Note :we can change the display resolution according to our available screen.
 
 ### Steps to install open source EDA tools on Ubuntu 20.04:
+- Reference taken from [1.chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools) and [2](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
+- **Install git**: git is a free and open-source distributed version control system used to handle  projects efficiently.
 
-1) sudo apt-get install git 
+   $ sudo apt-get install git 
  
  ![image](https://user-images.githubusercontent.com/123575472/216808664-0e9ebc04-d999-467a-9378-70c4b043c98c.png)
  ```
@@ -87,17 +89,17 @@
   - -k => represents like block-size=1K
   - -h =>print sizes in human readable format (e.g., 1K 234M 2G)
  ```
- ## Day-2 : Install magic and SKY130 PDKs
- - Reference taken from [chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
+## Magic 
  - To know about Magic Layout tool, click [this](http://opencircuitdesign.com/magic/)
- - **Magic Installation steps:**
+ - **Installation steps:**
  
  ```
 $  git clone git://opencircuitdesign.com/magic
 $  cd magic
-$	./configure
-$  make
-$  sudo make install
+$ ./configure
+$ make
+$ sudo make install
+$ magic gui 
 ```
   ![image](https://user-images.githubusercontent.com/123575472/216885988-7d58dad5-6dd0-4e54-a720-e513323405e3.png)
   ![image](https://user-images.githubusercontent.com/123575472/216886142-e2f25aac-a1cc-46c5-bdcb-d18c1db26f38.png)
@@ -108,10 +110,8 @@ $  sudo make install
                    - If no gcc, install it using  :$ sudo apt-get install gcc
                    - After this ,run the command i.e  $sudo apt-get install build-essential 
                    ``` 
-  
- To know about this build-essential , click[here](https://itslinuxfoss.com/build-essential-package-ubuntu-install/#1).
+ 
                  
-  
  ![image](https://user-images.githubusercontent.com/123575472/216886246-b134582a-e9b0-4b38-ac9f-1e1e7ceb2010.png)
  ![image](https://user-images.githubusercontent.com/123575472/216886393-568189b9-b74d-4500-97bd-ef842930e618.png)
  ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
@@ -127,6 +127,8 @@ $  sudo make install
    ![image](https://user-images.githubusercontent.com/123575472/217120672-bd013840-ee4e-4dd0-8f6a-d6d680fbef4a.png)
   ```
    sudo rm -rf /var/cache/apt/archives/
+   
+  # Packages required to compile magic:
    $ sudo apt-get install m4
    $ sudo apt-get install tcsh
    $ sudo apt-get install csh
@@ -141,38 +143,50 @@ $  sudo make install
   ```
 
 ![image](https://user-images.githubusercontent.com/123575472/217154080-eb2ff8d3-91f8-49b6-a5d4-4aaa8c52c0fc.png)
-
-The above commands are used to fix some errors and then follow below commands.
-                                
-                                $ make 
-                                $sudo make install
-                                $magic gui 
-                              
+                                                          
 ![image](https://user-images.githubusercontent.com/123575472/217190892-a8679fd5-4bcc-423e-99e2-ed320310aff5.png)
                              
  Thus ,Magic is installed.
-![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
+ 
+## Netgen
 
+Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
+
+-** Steps to install**:
+```
+ $  git clone git://opencircuitdesign.com/netgen
+ $  cd netgen
+ $ ./configure
+ $  make
+ $  sudo make install
+```
+![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
 
-- **Xschem**:
+## Xschem
+
+
+- **steps**:
    ```
-    $ git clone https://github.com/StefanSchippers/xschem.git xschem-src
-    $ cd xschem-src/
-    $ ./configure
-    $ sudo apt-get install flex
-    $ sudo apt-get install bison
-    $ sudo apt-get install libxpm-dev
-    $ sudo apt-get install libx11-xcb-dev 
-    $ sudo apt-get install libx11-6
+    $ git clone https://github.com/StefanSchippers/xschem.git xschem-git
+    $ cd xschem-git
     $ ./configure 
     $ make
     $ sudo make install
     $ xschem gui
    ```
 
+
 ![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
+
+```
+  $ sudo apt-get install flex
+    $ sudo apt-get install bison
+    $ sudo apt-get install libxpm-dev
+    $ sudo apt-get install libx11-xcb-dev 
+    $ sudo apt-get install libx11-6
+ ```
 
 - **ngspice**:
 
