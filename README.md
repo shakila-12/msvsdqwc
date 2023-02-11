@@ -188,7 +188,7 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
     $ sudo apt-get install libx11-6
  ```
 
-- **ngspice**:
+- **Ngspice**:
 
 Install steps:
 
@@ -242,7 +242,7 @@ $  sudo make install
 
 To understand the flow, refer the following [repo.](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
       
-  **Commands to install ALIGN tool:**
+  **Steps followed to install ALIGN tool:**
 ```
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
