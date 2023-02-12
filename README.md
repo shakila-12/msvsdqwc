@@ -162,8 +162,6 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
 ```
 ![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
 
-![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
-
 ## Xschem
 
 
@@ -177,8 +175,8 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
     $ xschem gui
    ```
 
-
 ![image](https://user-images.githubusercontent.com/123575472/217491023-f412d212-a73f-40cb-ab08-61715a99b820.png)
+![image](https://user-images.githubusercontent.com/123575472/217480454-d7bb42c3-464e-4799-a0bc-53b1c1214a6b.png)
 
 ```
   $ sudo apt-get install flex
@@ -188,7 +186,7 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
     $ sudo apt-get install libx11-6
  ```
 
-- **Ngspice**:
+## Ngspice:
 
 Install steps:
 
@@ -211,15 +209,14 @@ see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl)
             $ apt-cache search readline (used to look at the available libraries )
             $ sudo apt-get install libreadline8 libreadline-dev
             $ sudo apt-get update
+            # to view simulation graphs
             $ sudo apt-get install xterm
  
 ![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
-Please note that to view the simulation graphs of ngspice, xterm is required and can be installed using.
 
 
-
-- **Open_PDK:**
+## Open_PDK
 
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
@@ -238,7 +235,7 @@ $  sudo make install
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
                  
 
-- **ALIGN**:
+## ALIGN
 
 To understand the flow, refer the following [repo.](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
       
@@ -274,6 +271,8 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
       
   ```
   
+ ![ALIGN](https://user-images.githubusercontent.com/123575472/218288296-e0d9ed1d-0b11-4ea1-ba30-047fc93216b3.png)
+
 
    
 
