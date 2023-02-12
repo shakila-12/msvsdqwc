@@ -283,8 +283,7 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 
 ## TASK: CREATE INVERTER AMD PERFORM PRE-LAYOUT,POST-LAYOUT EXPERIMENT USING XCSHEM OR NGSPICE
 
-
-
+### Inverter schematic using xschem:
 
 
 
