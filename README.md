@@ -236,6 +236,11 @@ $  sudo make install
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
 
 ### Verifiying the open_pdk installation:
+![image](https://user-images.githubusercontent.com/123575472/218292058-a580280d-5512-4406-8b51-b7761f997288.png)
+![image](https://user-images.githubusercontent.com/123575472/218291924-7ccc8bd3-5965-44db-99f9-0ef28df726e6.png)
+![image](https://user-images.githubusercontent.com/123575472/218292168-69c78a35-a972-4a76-bae1-0d0765bc0cf2.png)
+![image](https://user-images.githubusercontent.com/123575472/218292250-53f731be-8347-4dd2-a193-324dca33c87e.png)
+
 
 
 ## ALIGN
