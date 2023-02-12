@@ -74,7 +74,7 @@
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
     - Note :we can change the display resolution according to our available screen.
 
-### Steps to install open source EDA tools on Ubuntu 20.04:
+### STEPS TO INSTALL OPEN SOURCE EDA TOOLS ON UBUNTU 20.04:
 - Reference taken from [1.chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools) and [2](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
 - **Install git**: git is a free and open-source distributed version control system used to handle  projects efficiently.
 
@@ -281,6 +281,10 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
   
  ![ALIGN](https://user-images.githubusercontent.com/123575472/218288296-e0d9ed1d-0b11-4ea1-ba30-047fc93216b3.png)
 
+## TASK: CREATE INVERTER AMD PERFORM PRE-LAYOUT,POST-LAYOUT EXPERIMENT USING XCSHEM OR NGSPICE
 
-   
+
+
+
+
 
