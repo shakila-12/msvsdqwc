@@ -201,16 +201,17 @@ After downloading the [tarball](https://sourceforge.net/projects/ngspice/files/n
  $ sudo make install
  
 ```
+![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
 
-
+            ## Package dependencies shown below##
             $ sudo apt-get install libxaw7-dev
-            $ apt-cache search readline (used to look at the available libraries )
+            $ apt-cache search readline (#used to look at the available libraries )
             $ sudo apt-get install libreadline8 libreadline-dev
             $ sudo apt-get update
             # to view simulation graphs
             $ sudo apt-get install xterm
  
-![image](https://user-images.githubusercontent.com/123575472/217505868-9e7b5373-9dd0-4206-bf0b-a0538509d99c.png)
+
 
 
 
@@ -233,7 +234,9 @@ $  sudo make install
 - For PDK manual installation ,reference to be the taken is given in  two links:
                  [link1](http://www.opencircuitdesign.com/open_pdks/install.html),
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
-                 
+
+### Verifiying the open_pdk installation:
+
 
 ## ALIGN
 
