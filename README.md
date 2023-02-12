@@ -189,8 +189,7 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
 
 Install steps:
 
-After downloading the [tarball](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download),extract it using below command and  
-see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl) for instructions on compilation and installation of ngspice. 
+After downloading the [tarball](https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/37/ngspice-37.tar.gz/download),extract it using below command and  also see the [manual](https://ngspice.sourceforge.io/ngspice-tutorial.html#downloadl) for instructions on compilation and installation of ngspice. 
 
 ```
  $ tar -zxvf ngspice-37.tar.gz            
@@ -229,6 +228,8 @@ $  make
 $  sudo make install
 
 ```
+### Note:
+- sudo make doesnot installed complete openpdk, so make distclean and sudo make uninstall. Then just run make. It uses around 80 gb.So,make sure, we have  around 150gb free space of drives
 - For PDK manual installation ,reference to be the taken is given in  two links:
                  [link1](http://www.opencircuitdesign.com/open_pdks/install.html),
                  [link2](https://lootr5858.wordpress.com/2020/10/06/magic-vlsi-skywater-pdk-local-installation-guide/)
