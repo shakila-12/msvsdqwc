@@ -115,7 +115,7 @@ $ magic gui
  ![image](https://user-images.githubusercontent.com/123575472/216886246-b134582a-e9b0-4b38-ac9f-1e1e7ceb2010.png)
  ![image](https://user-images.githubusercontent.com/123575472/216886393-568189b9-b74d-4500-97bd-ef842930e618.png)
  ![image](https://user-images.githubusercontent.com/123575472/216886475-15fe6b3b-8b56-45f5-9217-efdf1ffc6bcb.png)
- ![image](https://user-images.githubusercontent.com/123575472/216886597-f9e362cb-9f89-497c-859e-27fb9fddbe91.png)
+ ![csh](https://user-images.githubusercontent.com/123575472/218288607-fa2f9ee0-8a8e-4b2b-aa9c-8f85ab3cc0b9.png)
 
 - Again run ./configure 
  
