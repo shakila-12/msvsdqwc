@@ -308,3 +308,9 @@ at wp=wn=3
 @ DIFF WIDTHS:
 ![image](https://user-images.githubusercontent.com/123575472/218880868-8044f410-1772-4498-8445-52793e1511d3.png)
 
+![image](https://user-images.githubusercontent.com/123575472/218882340-456db836-e6ea-473a-a9bb-ffcd5a9a959a.png)
+
+![image](https://user-images.githubusercontent.com/123575472/218882628-32991dab-4ea8-4f5d-a8db-44a2aff02496.png)
+
+
+
