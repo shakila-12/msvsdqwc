@@ -292,12 +292,6 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/218701852-88c08615-ae3e-432e-bffc-8fb82b51ed94.png)
 
 
-![image](https://user-images.githubusercontent.com/123575472/218867784-ad6cf2a0-bd71-414a-aeb4-92d54325c87b.png)
-
-
-![image](https://user-images.githubusercontent.com/123575472/218300942-463e8d9c-c552-4b28-a81f-0ad005056c05.png)
-
-
 
 at wp=wn=3
 
