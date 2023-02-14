@@ -161,6 +161,8 @@ Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
 ```
 ![image](https://user-images.githubusercontent.com/123575472/217474536-0edbab43-3d6a-447d-861f-ea53511e9c08.png)
 
+
+- Note: A similar behaviour can be replicated in magic as well as netgen by appending the respective open commands with -noconsole . Magic can even be run with no graphics by using [magic -dnull -noconsole]  and this mode of calling magic is especially used when running magic from a script. Refer this [repo](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
 ## Xschem
 
 
