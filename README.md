@@ -287,6 +287,10 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 
 ### Inverter schematic using xschem:
 
+
+
+![image](https://user-images.githubusercontent.com/123575472/218701852-88c08615-ae3e-432e-bffc-8fb82b51ed94.png)
+
 ![image](https://user-images.githubusercontent.com/123575472/218328335-11fce83c-a92b-4fee-bbd4-7b9c5d833824.png)
 
 
