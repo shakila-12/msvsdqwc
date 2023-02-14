@@ -306,5 +306,5 @@ at wp=wn=3
 
 ![image](https://user-images.githubusercontent.com/123575472/218882628-32991dab-4ea8-4f5d-a8db-44a2aff02496.png)
 
-
+Rise transition: Output transition from 20% to 80% [ voltage=1.8v => , 20% of 1.8 is 0.36 and 80%of 1.8 is 1.44 ]
 
