@@ -149,8 +149,7 @@ $ magic gui
 ## Netgen
 
 Visit the website for the [info](http://opencircuitdesign.com/netgen/index.html)
-
--** Steps to install**:
+- ** Steps to install**:
 ```
  $  git clone git://opencircuitdesign.com/netgen
  $  cd netgen
@@ -286,15 +285,6 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 
 ### Inverter schematic using xschem:
 
-
-
-![image](https://user-images.githubusercontent.com/123575472/218701852-88c08615-ae3e-432e-bffc-8fb82b51ed94.png)
-
-
-
-at wp=wn=3
-
-![image](https://user-images.githubusercontent.com/123575472/218878183-9d2a64fc-5f79-42f7-a724-9c6a9e38a7a0.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/218874723-98bf03be-c42e-4726-a143-aeb067b6fa99.png)
 
