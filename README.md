@@ -316,4 +316,5 @@ at wp=wn=3
 - **Rise Delay**: [delay between 50%(1.8V) of input to 50%(1.8V) of output]:
 
 
+![image](https://user-images.githubusercontent.com/123575472/218896861-5ecba6b3-e6a2-4feb-a59e-1b64036608a8.png)
 
