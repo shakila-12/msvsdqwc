@@ -306,14 +306,14 @@ at wp=wn=3
 
 ![image](https://user-images.githubusercontent.com/123575472/218882628-32991dab-4ea8-4f5d-a8db-44a2aff02496.png)
 
-- Rise transition: Output transition from 20% to 80% [ voltage=1.8v => , 20% of 1.8 is 0.36 and 80%of 1.8 is 1.44 ]
+- **Rise transition**: Output transition from 20% to 80% [ voltage=1.8v => , 20% of 1.8 is 0.36 and 80%of 1.8 is 1.44 ]
 ![image](https://user-images.githubusercontent.com/123575472/218892997-981fd2fb-d5e7-4de9-bf38-4ebc2d6f3616.png)
 ![image](https://user-images.githubusercontent.com/123575472/218893309-c0c26dcc-d63c-4bc8-a4c0-a1330f58eb16.png)
 
-- Fall transition: Output transition from 80% to 20%
+- **Fall transition**: Output transition from 80% to 20%
 ![image](https://user-images.githubusercontent.com/123575472/218894529-72e6a23e-8d68-4215-b9b7-d7762572cd51.png)
 
-
+- **Rise Delay**: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
 
 
 
