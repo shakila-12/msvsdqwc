@@ -322,3 +322,17 @@ at wp=wn=3
 - **Fall Delay **: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
 ![image](https://user-images.githubusercontent.com/123575472/218898200-5ef114df-33d0-49de-a925-ac4aed5b8d1f.png)
 
+![image](https://user-images.githubusercontent.com/123575472/218989745-3efc7deb-5454-498b-9f9a-9892aea82986.png)
+
+![image](https://user-images.githubusercontent.com/123575472/218989331-de79eea1-95bf-4e43-a039-e6ada8ab07a5.png)
+![image](https://user-images.githubusercontent.com/123575472/218993911-8fe42e2c-c5fd-4551-aa2e-ec2646ae743c.png)
+
+![image](https://user-images.githubusercontent.com/123575472/218993805-51163b41-10b0-4045-a7ac-782c07d2e8ef.png)
+
+![image](https://user-images.githubusercontent.com/123575472/218995517-d01f19ee-b37c-469d-8466-5a3309c947c7.png)
+![image](https://user-images.githubusercontent.com/123575472/218996331-8c44652f-586f-472d-ae0f-53c38cf856cb.png)
+![image](https://user-images.githubusercontent.com/123575472/218996472-0d1a50be-8883-47f0-a16b-7f54195c553f.png)
+
+
+
+
