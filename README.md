@@ -313,7 +313,7 @@ at wp=wn=3
 - **Fall transition**: Output transition from 80% to 20%
 ![image](https://user-images.githubusercontent.com/123575472/218894529-72e6a23e-8d68-4215-b9b7-d7762572cd51.png)
 
-- **Rise Delay**: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
+- **Rise Delay**: [delay between 50%(1.8V) of input to 50%(1.8V) of output]:
 
 
 
