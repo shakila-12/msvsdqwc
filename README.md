@@ -72,8 +72,7 @@
     ![image](https://user-images.githubusercontent.com/123575472/216800851-dae7a929-4648-4c92-a890-b8bdd31a385a.png)
 
 9. Fill the user name ,password details and click on continue.It will continues to copy files,download packages and finally installation is complete.
-    - Note :we can change the display resolution according to our available screen.
-
+    
 ### STEPS TO INSTALL OPEN SOURCE EDA TOOLS ON UBUNTU 20.04:
 - Reference taken from [1.chapter 0 of PV GitHub repo](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools) and [2](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
 - **Install git**: git is a free and open-source distributed version control system used to handle  projects efficiently.
