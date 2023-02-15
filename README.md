@@ -320,4 +320,5 @@ at wp=wn=3
 ![image](https://user-images.githubusercontent.com/123575472/218896861-5ecba6b3-e6a2-4feb-a59e-1b64036608a8.png)
 
 - **Fall Delay **: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
+![image](https://user-images.githubusercontent.com/123575472/218898200-5ef114df-33d0-49de-a925-ac4aed5b8d1f.png)
 
