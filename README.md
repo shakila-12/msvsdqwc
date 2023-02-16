@@ -322,6 +322,10 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/218996331-8c44652f-586f-472d-ae0f-53c38cf856cb.png)
 ![image](https://user-images.githubusercontent.com/123575472/218996472-0d1a50be-8883-47f0-a16b-7f54195c553f.png)
 
+### Post layout characterisation using magic:
+** Steps **:
+![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
+
 
 
 
