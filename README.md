@@ -372,6 +372,7 @@ After importing the generated spice netlist , the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
 Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
 
-
+- TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
+- 
 
 
