@@ -326,7 +326,8 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ** Steps **:
 ![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
 
-
-
+After importing the generated spice netlist , the following image appears..
+![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
+Note: For the steps to import refer [this]()
 
 
