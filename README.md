@@ -322,12 +322,56 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/218996331-8c44652f-586f-472d-ae0f-53c38cf856cb.png)
 ![image](https://user-images.githubusercontent.com/123575472/218996472-0d1a50be-8883-47f0-a16b-7f54195c553f.png)
 
+### Generated spice netlist:
+  ```
+  ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter_tb.sch
+.subckt inverter_tb Vout Vin
+*.PININFO Vout:O Vin:I
+x1 VDD Vin Vout GND inverter
+V1 Vin GND pulse (0 1.8 1n 1n 1ns 4n 10n)
+.save i(v1)
+V2 VDD GND 1.8
+.save i(v2)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 1u
+.save all
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+** sym_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter.sym
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter.sch
+.subckt inverter VDD Vin Vout GND
+*.PININFO Vout:O Vin:I VDD:B GND:B
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+  
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end
+
+```
+
 ### Post layout characterisation using magic:
 ** Steps **:
 ![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
 
 After importing the generated spice netlist , the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
-Note: For the steps to import refer [this]()
+Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
+
+
 
 
