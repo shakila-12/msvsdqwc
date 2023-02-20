@@ -354,10 +354,10 @@ Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
 After importing the generated spice netlist , (go to file ->IMPORT NETLIST ....in layout window)the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/220136800-8fb1e4c4-f597-4fb4-8208-36ae237a47bf.png)
 
-![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
 Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
 
 - TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
+- 
 - 
 
 
