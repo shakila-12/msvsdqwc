@@ -311,6 +311,13 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 - **Fall Delay **: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
 ![image](https://user-images.githubusercontent.com/123575472/218898200-5ef114df-33d0-49de-a925-ac4aed5b8d1f.png)
 
+![image](https://user-images.githubusercontent.com/123575472/220120225-8b092da1-8d7a-41d2-b3ec-25e54b191d44.png)
+![image](https://user-images.githubusercontent.com/123575472/220120599-15884e0b-54a6-4dca-b244-13d4955ad650.png)
+![image](https://user-images.githubusercontent.com/123575472/220127621-b7498353-1a9d-46f0-996e-e1ddc3e4b312.png)
+![image](https://user-images.githubusercontent.com/123575472/220127319-95b4970c-3749-4f6b-9d5b-010bad58b8b5.png)
+![image](https://user-images.githubusercontent.com/123575472/220130973-149b1287-3b02-42c1-a585-5b7038ada8ed.png)
+
+
 ![image](https://user-images.githubusercontent.com/123575472/218989745-3efc7deb-5454-498b-9f9a-9892aea82986.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/218989331-de79eea1-95bf-4e43-a039-e6ada8ab07a5.png)
