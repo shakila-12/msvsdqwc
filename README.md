@@ -318,64 +318,6 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/220130973-149b1287-3b02-42c1-a585-5b7038ada8ed.png)
 
 
-
-********************************************************************************************************************
-******************************************************************************************************************
-
-
-![image](https://user-images.githubusercontent.com/123575472/218989745-3efc7deb-5454-498b-9f9a-9892aea82986.png)
-
-![image](https://user-images.githubusercontent.com/123575472/218989331-de79eea1-95bf-4e43-a039-e6ada8ab07a5.png)
-![image](https://user-images.githubusercontent.com/123575472/218993911-8fe42e2c-c5fd-4551-aa2e-ec2646ae743c.png)
-
-![image](https://user-images.githubusercontent.com/123575472/218993805-51163b41-10b0-4045-a7ac-782c07d2e8ef.png)
-
-![image](https://user-images.githubusercontent.com/123575472/218995517-d01f19ee-b37c-469d-8466-5a3309c947c7.png)
-![image](https://user-images.githubusercontent.com/123575472/218996331-8c44652f-586f-472d-ae0f-53c38cf856cb.png)
-![image](https://user-images.githubusercontent.com/123575472/218996472-0d1a50be-8883-47f0-a16b-7f54195c553f.png)
-
-### Generated spice netlist:
-  ```
-  ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter_tb.sch
-.subckt inverter_tb Vout Vin
-*.PININFO Vout:O Vin:I
-x1 VDD Vin Vout GND inverter
-V1 Vin GND pulse (0 1.8 1n 1n 1ns 4n 10n)
-.save i(v1)
-V2 VDD GND 1.8
-.save i(v2)
-**** begin user architecture code
-
-.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-
-
-.tran 0.01n 1u
-.save all
-
-**** end user architecture code
-.ends
-
-* expanding   symbol:  inverter.sym # of pins=4
-** sym_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter.sym
-** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/inverter.sch
-.subckt inverter VDD Vin Vout GND
-*.PININFO Vout:O Vin:I VDD:B GND:B
-XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-  
-XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-
-.ends
-
-.GLOBAL GND
-.GLOBAL VDD
-.end
-
-```
-
 ### Post layout characterisation using magic:
 ** Steps **:
 ![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
