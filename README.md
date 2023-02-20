@@ -317,10 +317,16 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/220127319-95b4970c-3749-4f6b-9d5b-010bad58b8b5.png)
 ![image](https://user-images.githubusercontent.com/123575472/220130973-149b1287-3b02-42c1-a585-5b7038ada8ed.png)
 
+**Generated spice netlist:**
+```
+
+
 
 ### Post layout characterisation using magic:
 ** Steps **:
 ![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
+![image](https://user-images.githubusercontent.com/123575472/220135071-e066b976-5862-4ed9-86e5-a00715a24dfc.png)
+
 
 After importing the generated spice netlist , the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
