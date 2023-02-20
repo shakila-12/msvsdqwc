@@ -320,6 +320,29 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 **Generated spice netlist:**
 ```
 
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_tran.sch
+.subckt invert_tran VDD GND Vin Vout
+*.PININFO VDD:B GND:B Vin:I Vout:O
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+VDD VDD GND 1.8
+.save i(vdd)
+Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
+.save i(vin)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 50n
+.save all
+
+**** end user architecture code
+.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end
+````
 
 
 ### Post layout characterisation using magic:
@@ -328,7 +351,7 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/220135071-e066b976-5862-4ed9-86e5-a00715a24dfc.png)
 
 
-After importing the generated spice netlist , the following image appears..
+After importing the generated spice netlist , (go to file ->IMPORT NETLIST ....in layout window)the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/219412363-3c8f2ec8-8b52-45a5-9e27-a5f8934442de.png)
 Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
 
