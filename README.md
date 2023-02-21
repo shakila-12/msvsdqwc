@@ -357,7 +357,8 @@ Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physi
 
 - TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
 - 
-![image](https://user-images.githubusercontent.com/123575472/220369298-d8d58e2d-2c7d-44b3-bed6-ee7c57ab6bf7.png)
+
+![image](https://user-images.githubusercontent.com/123575472/220376518-6af4dbd7-461c-404f-b69f-d5b7b0a6928f.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/220374114-99950775-ed9b-4e7f-b755-0ae010a5739a.png)
 
