@@ -416,4 +416,14 @@ Note:
 ![image](https://user-images.githubusercontent.com/123575472/220640680-dd631ae8-cb99-486b-afbb-2a1793f4f40c.png)
 ![image](https://user-images.githubusercontent.com/123575472/220733708-edf68540-1fd6-46fa-b88a-e10e996841ba.png)
 
+Rise transition:
+![image](https://user-images.githubusercontent.com/123575472/220739788-2b7b3faf-36bf-40b6-857f-935b19561e36.png)
+
+fall:![image](https://user-images.githubusercontent.com/123575472/220740085-bd3b52c0-0993-4639-a2f4-7cee0616de93.png)
+
+rise delay :![image](https://user-images.githubusercontent.com/123575472/220740692-2d5164c1-60ea-48e7-811d-4a93e5ea17c3.png)
+
+fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
+
+
 
