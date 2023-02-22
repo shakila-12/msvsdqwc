@@ -398,6 +398,7 @@ Note:
       2 Note before routing: 
              - In layout window,select the FET, press i and the move to the wanted area. 
               - Select the pin  ->go to edit ->select area ->then move .
+      3.
 ```      
 
 ![image](https://user-images.githubusercontent.com/123575472/220508613-e160800c-c573-4d70-a2c3-5942cbf463b9.png)
