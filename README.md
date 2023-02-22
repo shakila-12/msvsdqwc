@@ -356,7 +356,9 @@ After importing the generated spice netlist , (go to file ->IMPORT NETLIST ....i
 Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
 
 - TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
-- 
+
+![image](https://user-images.githubusercontent.com/123575472/220508613-e160800c-c573-4d70-a2c3-5942cbf463b9.png)
+
 
 ![image](https://user-images.githubusercontent.com/123575472/220376518-6af4dbd7-461c-404f-b69f-d5b7b0a6928f.png)
 
