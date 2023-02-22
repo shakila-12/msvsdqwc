@@ -465,35 +465,36 @@ C13 GND VSUBS 0.38fF
 
 ***pre layout simulation netlist that needs to be included***
 ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_tran.sch
-*.subckt invert_tran VDD GND Vin Vout
-*.PININFO VDD:B GND:B Vin:I Vout:O
-
+**.subckt invert_tran VDD GND Vin Vout
+*.iopin VDD
+*.iopin GND
+*.ipin Vin
+*.opin Vout
 XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-
 XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-
 VDD VDD GND 1.8
-.save i(VDD)
+.save i(vdd)
 Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
-.save i(VIN)
+.save i(vin)
 **** begin user architecture code
 
 .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 
 .tran 0.01n 50n
-
 .save all
 
 **** end user architecture code
-
-
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
 .end
 ```
+
 ![image](https://user-images.githubusercontent.com/123575472/220733708-edf68540-1fd6-46fa-b88a-e10e996841ba.png)
 
 Rise transition:
