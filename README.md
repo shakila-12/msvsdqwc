@@ -308,7 +308,40 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 ![image](https://user-images.githubusercontent.com/123575472/218896861-5ecba6b3-e6a2-4feb-a59e-1b64036608a8.png)
 
 - **Fall Delay **: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
+
+### DC analysis:
 ![image](https://user-images.githubusercontent.com/123575472/218898200-5ef114df-33d0-49de-a925-ac4aed5b8d1f.png)
+
+- **Netlist:**
+```
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_dc_tb.sch
+**.subckt invert_dc_tb Vin Vout
+*.ipin Vin
+*.opin Vout
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+Vdd VDD GND 1.8
+.save i(vdd)
+Vin Vin GND 0
+.save i(vin)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.dc Vin 0 1.8 0.01
+.save all
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
+```
 
 ![image](https://user-images.githubusercontent.com/123575472/220120225-8b092da1-8d7a-41d2-b3ec-25e54b191d44.png)
 ![image](https://user-images.githubusercontent.com/123575472/220120599-15884e0b-54a6-4dca-b244-13d4955ad650.png)
