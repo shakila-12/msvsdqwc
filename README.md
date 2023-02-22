@@ -394,11 +394,11 @@ After importing the generated spice netlist , (go to file ->IMPORT NETLIST ....i
      
 ``` 
 Note:  
-      1 The below INVERTER layout is drawn , just a curiosity to learn layout diag. and its spice netlist generated from layout is shown.
-      2 Note before routing: 
+      1. The below INVERTER layout is drawn , just a curiosity to learn layout diag. and its spice netlist generated from layout is shown.
+      2. Note before routing: 
              - In layout window,select the FET, press i and the move to the wanted area. 
               - Select the pin  ->go to edit ->select area ->then move .
-      3.
+      3. The extracted netlist which you get from magic does not contain the control statements(plots, sources, etc). It's just a bare subckt(black box or an IC). You            must add the .control statements(power it) by pasting them from the pre-layout and get a similar output
 ```      
 
 ![image](https://user-images.githubusercontent.com/123575472/220508613-e160800c-c573-4d70-a2c3-5942cbf463b9.png)
