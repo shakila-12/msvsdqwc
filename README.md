@@ -414,6 +414,86 @@ Note:
 ![image](https://user-images.githubusercontent.com/123575472/220638465-510eef26-8b1b-4b85-999b-2685fca8792d.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/220640680-dd631ae8-cb99-486b-afbb-2a1793f4f40c.png)
+- **Extracted spice netlist:**
+```
+* NGSPICE file created from invert_tran.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+C0 a_n33_n188# a_15_n100# 0.03fF
+C1 a_n73_n100# a_15_n100# 0.16fF
+C2 a_n73_n100# a_n33_n188# 0.03fF
+C3 a_15_n100# a_n175_n274# 0.08fF
+C4 a_n73_n100# a_n175_n274# 0.11fF
+C5 a_n33_n188# a_n175_n274# 0.30fF
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
++ VSUBS
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+C0 w_n211_n319# a_15_n100# 0.06fF
+C1 w_n211_n319# a_n73_n100# 0.09fF
+C2 a_n33_n197# a_15_n100# 0.03fF
+C3 a_n33_n197# a_n73_n100# 0.03fF
+C4 a_15_n100# a_n73_n100# 0.16fF
+C5 a_n33_n197# w_n211_n319# 0.26fF
+C6 a_15_n100# VSUBS 0.02fF
+C7 a_n73_n100# VSUBS 0.02fF
+C8 a_n33_n197# VSUBS 0.05fF
+C9 w_n211_n319# VSUBS 1.07fF
+.ends
+
+.subckt invert_tran VDD GND Vin Vout
+XXM1 GND Vin Vout VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM2 VDD Vout XM2/w_n211_n319# Vin VSUBS sky130_fd_pr__pfet_01v8_XGS3BL
+C0 GND XM2/w_n211_n319# 0.00fF
+C1 XM2/w_n211_n319# VDD 0.08fF
+C2 Vin Vout 0.06fF
+C3 XM2/w_n211_n319# Vout 0.11fF
+C4 GND Vout 0.00fF
+C5 Vout VDD 0.00fF
+C6 Vin XM2/w_n211_n319# 0.13fF
+C7 GND Vin 0.11fF
+C8 Vin VDD 0.10fF
+C9 Vin VSUBS 0.38fF
+C10 VDD VSUBS 0.25fF
+C11 XM2/w_n211_n319# VSUBS 1.13fF
+C12 Vout VSUBS 0.56fF
+C13 GND VSUBS 0.38fF
+.ends
+
+
+***simulation***
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_tran.sch
+*.subckt invert_tran VDD GND Vin Vout
+*.PININFO VDD:B GND:B Vin:I Vout:O
+
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+
+VDD VDD GND 1.8
+.save i(VDD)
+Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
+.save i(VIN)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 50n
+
+.save all
+
+**** end user architecture code
+
+
+.end
+```
 ![image](https://user-images.githubusercontent.com/123575472/220733708-edf68540-1fd6-46fa-b88a-e10e996841ba.png)
 
 Rise transition:
