@@ -494,6 +494,10 @@ Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
 .GLOBAL GND
 .end
 ```
+![image](https://user-images.githubusercontent.com/123575472/220755714-ca1ea4e9-01a7-41b1-8d87-b8e48cf95484.png)
+
+```
+Note: When we compare pre-layout  and postlayout,there is no change in dc analysis. Change is at transient analysis ,because of capacitances that included after layout.
 
 ![image](https://user-images.githubusercontent.com/123575472/220733708-edf68540-1fd6-46fa-b88a-e10e996841ba.png)
 
@@ -505,6 +509,7 @@ fall:![image](https://user-images.githubusercontent.com/123575472/220740085-bd3b
 rise delay :![image](https://user-images.githubusercontent.com/123575472/220740692-2d5164c1-60ea-48e7-811d-4a93e5ea17c3.png)
 
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
+
 
 
 
