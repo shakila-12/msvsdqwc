@@ -463,7 +463,7 @@ C13 GND VSUBS 0.38fF
 .ends
 
 
-***simulation***
+***pre layout simulation netlist that needs to be included***
 ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_tran.sch
 *.subckt invert_tran VDD GND Vin Vout
 *.PININFO VDD:B GND:B Vin:I Vout:O
