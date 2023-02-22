@@ -389,12 +389,17 @@ Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
 After importing the generated spice netlist , (go to file ->IMPORT NETLIST ....in layout window)the following image appears..
 ![image](https://user-images.githubusercontent.com/123575472/220136800-8fb1e4c4-f597-4fb4-8208-36ae237a47bf.png)
 
-Note: For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
+Note: 1. For the steps to import refer [this](https://github.com/Avnish21/VSD-Physical-Verification-Using-Sky130/blob/main/README.md)
+      2. TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
+      3. The below INVERTER layout is drawn , just a curiosity to learn layout diag. and its spice netlist generated from layout is shown.
+      4. Note before routing: 
+              - In layout window,select the FET, press i and the move to the wanted area. 
+              - Select the pin  ->go to edit ->select area ->then move .
+      
+  ![image](https://user-images.githubusercontent.com/123575472/220508613-e160800c-c573-4d70-a2c3-5942cbf463b9.png)
+  ![image](https://user-images.githubusercontent.com/123575472/220509920-1043be9d-8b74-476c-b140-0a3411e68877.png)
 
-- TO  UNDERSTAND THE LAYOUT PROCESS ,REFER https://www.udemy.com/course/vlsi-academy-custom-layout/
-
-![image](https://user-images.githubusercontent.com/123575472/220508613-e160800c-c573-4d70-a2c3-5942cbf463b9.png)
-![image](https://user-images.githubusercontent.com/123575472/220509920-1043be9d-8b74-476c-b140-0a3411e68877.png)
-
+- **After routing:**
 ![image](https://user-images.githubusercontent.com/123575472/220532630-77927ded-0bd1-400c-a58c-7bf7ed49dd87.png)
+
 
