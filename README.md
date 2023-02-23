@@ -510,6 +510,9 @@ rise delay :![image](https://user-images.githubusercontent.com/123575472/2207406
 
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
 
-
+LVS report:
+```
+netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.spice" 
+```
 
 
