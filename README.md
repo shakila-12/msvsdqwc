@@ -511,6 +511,7 @@ rise delay :![image](https://user-images.githubusercontent.com/123575472/2207406
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
 
 LVS report:
+The schematic netlist and layout netlist can be compared using LVS by netgen
 ```
 netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.spice" 
 ```
@@ -518,5 +519,6 @@ netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.s
 ![image](https://user-images.githubusercontent.com/123575472/220842444-9633ab47-3d97-4b3a-9fcf-b56da2d1c775.png)
 Note: A small change in names, etc would also give an error. Hence, current cell that is not matching is shown.
 To understand all this ,refer http://opencircuitdesign.com/netgen/ .
-
+Task: To perform simulation of the below function:
+![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
 
