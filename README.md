@@ -515,4 +515,7 @@ LVS report:
 netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.spice" 
 ```
 
+![image](https://user-images.githubusercontent.com/123575472/220842444-9633ab47-3d97-4b3a-9fcf-b56da2d1c775.png)
+Note: A small change in names, etc would also give an error. Hence, current cell that is not matching is shown.
+
 
