@@ -521,12 +521,13 @@ netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.s
 Note: A small change in names, etc would also give an error. Hence, current cell that is not matching is shown.
 To understand all this ,refer http://opencircuitdesign.com/netgen/ .
 ## Task: To perform simulation of the below function:
+### Pre-layout Simulation of function using Magic and Ngspice :
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
 
 
 ![image](https://user-images.githubusercontent.com/123575472/220959062-9625b3a2-3447-407c-bdda-ece40df2b05c.png)
 
-***pre-layout Netlist description***
+***Netlist description***
 ```
 M1 3 a vdd vdd pmos W=2.125u L=0.25u
 M2 2 b vdd vdd pmos W=2.125u L=0.25u
