@@ -522,9 +522,12 @@ Note: A small change in names, etc would also give an error. Hence, current cell
 To understand all this ,refer http://opencircuitdesign.com/netgen/ .
 ## Task: To perform simulation of the below function:
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
-- **Netlist for the above function:**
+
+
+![image](https://user-images.githubusercontent.com/123575472/220959062-9625b3a2-3447-407c-bdda-ece40df2b05c.png)
+
+***pre-layout Netlist description***
 ```
-***Netlist description for prelayout simulation***
 M1 3 a vdd vdd pmos W=2.125u L=0.25u
 M2 2 b vdd vdd pmos W=2.125u L=0.25u
 M3 4 d 2 2 pmos W=2.125u L=0.25u
@@ -554,6 +557,9 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 .tran 10p 4n
 
 *** .include model file ***
-.include my_model_file.mod
+.LIB "my_model_file.tech" CMOS_MODELS
 .end
 ```
+![image](https://user-images.githubusercontent.com/123575472/220961944-cf6da65b-0567-4144-9de4-81483334f0c3.png)
+
+
