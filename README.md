@@ -524,7 +524,7 @@ netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.s
 Note: A small change in names, etc would also give an error. Hence, current cell that is not matching is shown.
 To understand all this ,refer http://opencircuitdesign.com/netgen/ .
 ## Task: To perform simulation of the below function:
-### Pre-layout Simulation of function using Magic and Ngspice :
+### Pre-layout Simulation of the function using Magic and Ngspice :
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
 
 
@@ -633,4 +633,4 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 
 ![image](https://user-images.githubusercontent.com/123575472/221086596-a3193dfc-77e1-4416-8a38-1ad1d817d62f.png)
 ![image](https://user-images.githubusercontent.com/123575472/221086905-cf1cfcc0-763a-41d4-b46a-1a478a7be46a.png)
-
+## Design the below function using using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
