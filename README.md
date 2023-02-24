@@ -637,3 +637,4 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ## Design the below function using using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
 
+![image](https://user-images.githubusercontent.com/123575472/221221169-6177356e-ea1d-484f-bf1c-a2f8cadce223.png)
