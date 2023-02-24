@@ -510,10 +510,13 @@ rise delay :![image](https://user-images.githubusercontent.com/123575472/2207406
 
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
 
-LVS report:
-The schematic netlist and layout netlist can be compared using LVS by netgen
+### LVS report:
+
+The schematic netlist and layout netlist can be compared using LVS(layout vs schematic) by netgen
 ```
+Format to check LVS: $ netgen -batch lvs "postlayout spice netlist" "prelayout spice netlist"
 netgen -batch lvs "../mag/invert_tran.spice" "../xschem/simulation/invert_tran.spice" 
+
 ```
 ![image](https://user-images.githubusercontent.com/123575472/220869667-065c2e32-97a7-4e1c-a78b-54f4e7c7003b.png)
 
@@ -619,7 +622,7 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 ```
 ![image](https://user-images.githubusercontent.com/123575472/220979528-47ba871e-e2d0-479a-a8de-ed0156a65ea7.png)
 - **LVS check:** Mismatch occurs due to the extracted parasitic capacitances generated in the post layout spice netlist.
-- Format to check LVS: $ netgen -batch lvs "postlayout spice netlist" "prelayout spice netlist"
+
 
 ![image](https://user-images.githubusercontent.com/123575472/221081045-6c83e6d1-fead-424c-90a8-49183f042dfc.png)
 
