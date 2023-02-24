@@ -511,6 +511,7 @@ rise delay :![image](https://user-images.githubusercontent.com/123575472/2207406
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
 
 ### LVS report:
+Layout Versus Schematic (LVS) verification is the process of determining whether a particular integrated circuit layout corresponds to the original schematic or circuit diagram of the design.
 
 The schematic netlist and layout netlist can be compared using LVS(layout vs schematic) by netgen
 ```
