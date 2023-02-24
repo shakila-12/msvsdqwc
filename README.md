@@ -567,6 +567,7 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 ![image](https://user-images.githubusercontent.com/123575472/220961944-cf6da65b-0567-4144-9de4-81483334f0c3.png)
 
 ### Post-layout Simulation of function  using Magic and Ngspice :
+
 ![image](https://user-images.githubusercontent.com/123575472/220975943-a142680c-e755-4416-854d-9bff34450751.png)
 **Netlist:**
 ```
@@ -623,6 +624,7 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 ![image](https://user-images.githubusercontent.com/123575472/220979528-47ba871e-e2d0-479a-a8de-ed0156a65ea7.png)
 ### LVS check: 
 
+![image](https://user-images.githubusercontent.com/123575472/221087387-e0392c38-f282-4e98-b314-5ff5f82673b7.png)
 Mismatch occurs due to the extracted parasitic capacitances generated in the post layout spice netlist.
 
 ![image](https://user-images.githubusercontent.com/123575472/221081045-6c83e6d1-fead-424c-90a8-49183f042dfc.png)
