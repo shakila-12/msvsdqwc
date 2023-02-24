@@ -618,7 +618,9 @@ V6 f 0 0 pulse 0 2.5 0.6n 10p 10p 1n 2n
 .end
 ```
 ![image](https://user-images.githubusercontent.com/123575472/220979528-47ba871e-e2d0-479a-a8de-ed0156a65ea7.png)
-- **LVS check:**
+- **LVS check:** Mismatch occurs due to the extracted parasitic capacitances generated in the post layout spice netlist.
+- Format to check LVS: $ netgen -batch lvs "postlayout spice netlist" "prelayout spice netlist"
+
 ![image](https://user-images.githubusercontent.com/123575472/221081045-6c83e6d1-fead-424c-90a8-49183f042dfc.png)
 
 
