@@ -281,6 +281,36 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
   ```
   
  ![ALIGN](https://user-images.githubusercontent.com/123575472/218288296-e0d9ed1d-0b11-4ea1-ba30-047fc93216b3.png)
+### Making ALIGN Portable to Sky130 tehnology:
+
+Clone the following Repository inside ALIGN-public directory.
+```
+git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
+```
+- Move SKY130_PDK folder to  ALIGN-public/pdks
+
+- Everytime we start the tool in new terminal, run the following commands.
+```
+# Running ALIGN TOOL
+    $python -m venv general
+    $source general/bin/activate
+ ```
+- Commands to run ALIGN (goto ALIGN-public directory)
+
+```
+    $mkdir work
+    $cd work
+```
+- General syntax to give inputs
+
+```
+schematic2layout.py <NETLIST_DIR> -p <PDK_DIR> -c
+EXAMPLE:
+schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
+ 
+ Running a EXAMPLE on Sky130pdk:
+schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
+```
 
 ### TASK: CREATE INVERTER AND PERFORM PRE-LAYOUT,POST-LAYOUT EXPERIMENT USING XCSHEM /NGSPICE ,MAGIC
 ### Pre-layout :
