@@ -1,6 +1,6 @@
 # VSD Mixed-signal PD Research Program
 # WEEK 0
-## Day 1:  Open source tool installation
+## Open source tool installation
 ### How to install EDA tools for IC design and simulations?
 
 ### Components of IC design flow (RTL2GDS):
@@ -229,7 +229,8 @@ $  make
 $  sudo make install
 
 ```
-### Note:
+
+-**Note:**
 - sudo make doesnot installed complete openpdk, so make distclean and sudo make uninstall. Then just run make. It uses around 80 gb.So,make sure, we have  around 150gb free space of drives
 - For PDK manual installation ,reference to be the taken is given in  two links:
                  [link1](http://www.opencircuitdesign.com/open_pdks/install.html),
@@ -294,22 +295,6 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 
 ![image](https://user-images.githubusercontent.com/123575472/218882628-32991dab-4ea8-4f5d-a8db-44a2aff02496.png)
 
-- **Rise transition**: Output transition from 20% to 80% [ voltage=1.8v => , 20% of 1.8 is 0.36 and 80%of 1.8 is 1.44 ]
-![image](https://user-images.githubusercontent.com/123575472/218892997-981fd2fb-d5e7-4de9-bf38-4ebc2d6f3616.png)
-![image](https://user-images.githubusercontent.com/123575472/218893309-c0c26dcc-d63c-4bc8-a4c0-a1330f58eb16.png)
-
-- **Fall transition**: Output transition from 80% to 20%
-
-![image](https://user-images.githubusercontent.com/123575472/218894529-72e6a23e-8d68-4215-b9b7-d7762572cd51.png)
-
-- **Rise Delay**: [delay between 50%(1.8V) of input to 50%(1.8V) of output]:
-
-
-![image](https://user-images.githubusercontent.com/123575472/218896861-5ecba6b3-e6a2-4feb-a59e-1b64036608a8.png)
-
-- **Fall Delay **: [delay between 50%(1.65V) of input to 50%(1.65V) of output]:
-![image](https://user-images.githubusercontent.com/123575472/218898200-5ef114df-33d0-49de-a925-ac4aed5b8d1f.png)
-
 ### DC analysis:
 
 ![image](https://user-images.githubusercontent.com/123575472/220120225-8b092da1-8d7a-41d2-b3ec-25e54b191d44.png)
@@ -347,10 +332,17 @@ Vin Vin GND 0
 
 
 ![image](https://user-images.githubusercontent.com/123575472/220120599-15884e0b-54a6-4dca-b244-13d4955ad650.png)
-### Transient analysis:
+### Transient analysis:-
 ![image](https://user-images.githubusercontent.com/123575472/220127621-b7498353-1a9d-46f0-996e-e1ddc3e4b312.png)
 ![image](https://user-images.githubusercontent.com/123575472/220127319-95b4970c-3749-4f6b-9d5b-010bad58b8b5.png)
 ![image](https://user-images.githubusercontent.com/123575472/220130973-149b1287-3b02-42c1-a585-5b7038ada8ed.png)
+- **Rise transition**: Output transition from 20% to 80% [ voltage=1.8v => , 20% of 1.8 is 0.36 and 80%of 1.8 is 1.44 ]
+
+- **Fall transition**: Output transition from 80% to 20%
+
+- **Rise Delay**: delay between 50%(1.8V) of input to 50%(1.8V) of output 
+
+- **Fall Delay**:
 
 **Generated spice netlist:**
 ```
@@ -381,7 +373,7 @@ Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
 
 
 ### Post layout:
-**Steps **:
+**Steps**:
 ![image](https://user-images.githubusercontent.com/123575472/219266814-75bb3be1-90c2-44f5-af03-6e306d67a6c8.png)
 ![image](https://user-images.githubusercontent.com/123575472/220135071-e066b976-5862-4ed9-86e5-a00715a24dfc.png)
 
@@ -509,6 +501,8 @@ fall:![image](https://user-images.githubusercontent.com/123575472/220740085-bd3b
 rise delay :![image](https://user-images.githubusercontent.com/123575472/220740692-2d5164c1-60ea-48e7-811d-4a93e5ea17c3.png)
 
 fall delay: ![image](https://user-images.githubusercontent.com/123575472/220740907-8997b27d-4482-4305-b9c6-8b6cedee2abe.png)
+### Comparison of Pre-layout and Post-layout timing parameters:
+
 
 ### LVS report:
 Layout Versus Schematic (LVS) verification is the process of determining whether a particular integrated circuit layout corresponds to the original schematic or circuit diagram of the design.
@@ -723,8 +717,9 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 .end
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221281642-037968b1-19fa-432f-88b1-69a86ad797c9.png)
+- **Post-layout(yet to do routing):
 
-## Design of the function using ALIGN:
+## Design of the function and to perform postlayout characterisation using  ALIGN:
 ![image](https://user-images.githubusercontent.com/123575472/221224879-fa83eea3-05b4-4616-979b-a5ce636b72fa.png)
 - **Netlist**
 ```
