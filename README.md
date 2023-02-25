@@ -717,7 +717,12 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 .end
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221281642-037968b1-19fa-432f-88b1-69a86ad797c9.png)
-- **Post-layout(yet to do routing):
+- **Post-layout:**
+![image](https://user-images.githubusercontent.com/123575472/221346521-1e2acbb2-4a40-466c-960b-1d00afb0fc41.png)
+
+![image](https://user-images.githubusercontent.com/123575472/221345409-3a07e199-df71-494d-81ef-baf526616606.png)
+
+
 
 ## Design of the function and to perform postlayout characterisation using  ALIGN:
 ![image](https://user-images.githubusercontent.com/123575472/221224879-fa83eea3-05b4-4616-979b-a5ce636b72fa.png)
