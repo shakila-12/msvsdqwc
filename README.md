@@ -246,7 +246,7 @@ $  sudo make install
 
 ## ALIGN
 
-To understand the flow, refer the following [repo.](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
+To understand the flow, refer the following [repo,](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL) and its [website](https://align-analoglayout.github.io/ALIGN-public/index.html)
       
 **Steps followed to install ALIGN tool:**
 - Prerequisites
