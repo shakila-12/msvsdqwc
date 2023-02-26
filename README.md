@@ -248,69 +248,66 @@ $  sudo make install
 
 To understand the flow, refer the following [repo.](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
       
-  **Steps followed to install ALIGN tool:**
+**Steps followed to install ALIGN tool:**
+- Prerequisites
+
+gcc >= 6.1.0 (For C++14 support)
+python >= 3.7
 ```
+For Faster Installation ALIGN
+
+sudo apt update
+sudo apt install lp-solve
+sudo apt-get install libboost-all-dev
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
+
 git clone https://github.com/ALIGN-analoglayout/ALIGN-public
 cd ALIGN-public
-
 #Create a Python virtualenv
-python3 -m venv general
+python -m venv general
 source general/bin/activate
 python -m pip install pip --upgrade
 
-#Install ALIGN as a USER
+# Install ALIGN as a USER
 pip install -v .
-
-#Install ALIGN as a DEVELOPER
+# Install ALIGN as a DEVELOPER
 pip install -e .
 
 pip install setuptools wheel pybind11 scikit-build cmake ninja
 pip install -v -e .[test] --no-build-isolation
 pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
-
 ```
-
-```
-   - Note:Make sure that you installed pip and venv packages:
-
-      $ sudo apt install python3-pip
-      $ sudo apt install python3-venv
-      
-  ```
-  
- ![ALIGN](https://user-images.githubusercontent.com/123575472/218288296-e0d9ed1d-0b11-4ea1-ba30-047fc93216b3.png)
-### Making ALIGN Portable to Sky130 tehnology:
-
-Clone the following Repository inside ALIGN-public directory.
+- **Making ALIGN Portable to Sky130 tehnology:**
+Clone the following Repository inside ALIGN-public directory
 ```
 git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
-```
-- Move SKY130_PDK folder to  ALIGN-public/pdks
 
-- Everytime we start the tool in new terminal, run the following commands.
+move SKY130_PDK folder to /ALIGN-public/pdks
 ```
-# Running ALIGN TOOL
-    $python -m venv general
-    $source general/bin/activate
- ```
+- **Running ALIGN TOOL**
+Everytime we start running tool in new terminal run following commands.
+```
+python -m venv general
+source general/bin/activate
+```
 - Commands to run ALIGN (goto ALIGN-public directory)
-
 ```
-    $mkdir work
-    $cd work
+mkdir work
+cd work
 ```
-- General syntax to give inputs
-
+- **General syntax to give inputs**
 ```
 schematic2layout.py <NETLIST_DIR> -p <PDK_DIR> -c
-EXAMPLE:
+Running a EXAMPLE:
+
 schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
- 
- Running a EXAMPLE on Sky130pdk:
+Running a EXAMPLE on Sky130pdk
+
 schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
 ```
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ### TASK: CREATE INVERTER AND PERFORM PRE-LAYOUT,POST-LAYOUT EXPERIMENT USING XCSHEM /NGSPICE ,MAGIC
 ### Pre-layout :
