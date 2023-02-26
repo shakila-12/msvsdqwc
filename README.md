@@ -306,6 +306,10 @@ Running a EXAMPLE on Sky130pdk
 
 schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
 ```
+![image](https://user-images.githubusercontent.com/123575472/221388152-991e78ea-56b0-44ab-bd03-b6328e7d0512.png)
+![image](https://user-images.githubusercontent.com/123575472/221388314-6dc477f4-9fad-4e5b-8957-6f671f30c04a.png)
+
+
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
