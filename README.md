@@ -659,7 +659,22 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 
 ![image](https://user-images.githubusercontent.com/123575472/221086596-a3193dfc-77e1-4416-8a38-1ad1d817d62f.png)
 ![image](https://user-images.githubusercontent.com/123575472/221086905-cf1cfcc0-763a-41d4-b46a-1a478a7be46a.png)
-## Design the below function using using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
+# WEEK-1
+- **Installation of ALIGN is completed( steps are given above).**
+- Note: Follow the rules shown in the link , which helps to complete the task fast. https://docs.google.com/document/d/1RldOLssqc29qNuLmmlAmxlnkeW40NMr4uQ9kXzd2MMI/edit
+### Inverter post-layout characterization using ALIGN tool:
+- **steps to be followed**:
+```
+- 1.Create a work directory in ALIGN-public folder.
+  2.Make sure you have the inv_tb.spice file (created from lvs netlist in xschem) in that folder and rename it to .sp (Align reads .sp files) 
+  3.
+```
+![image](https://user-images.githubusercontent.com/123575472/221476694-70929109-4bfb-4c51-a213-d3d3dca5c125.png)
+- **Pre-layout netlist:**
+```
+
+
+## Design the below function using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
 ![image](https://user-images.githubusercontent.com/123575472/221280812-91355ab2-7e1f-4452-8ba2-145d6e08b435.png)
 - **Netlist**
