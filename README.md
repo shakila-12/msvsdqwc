@@ -670,11 +670,14 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
         =>set netlist Dir = /home/shakila12/Desktop/pd_rp/tools/ALIGN-public/build/inv/inv.sp
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221476694-70929109-4bfb-4c51-a213-d3d3dca5c125.png)
-![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
+![image](https://user-images.githubusercontent.com/123575472/221496322-494d1baa-2f3e-4eb5-9596-b88ca8dea59a.png)
 
-- **Pre-layout netlist:**
-```
-```
+![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
+![image](https://user-images.githubusercontent.com/123575472/221495814-0072224f-57ed-47af-b277-c9408118c207.png)
+
+![image](https://user-images.githubusercontent.com/123575472/221497058-4e2d5ad4-ce59-4ebd-9a8b-47b4566cf61d.png)
+
+
 
 ## Design the below function using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
