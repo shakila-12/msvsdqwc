@@ -661,7 +661,9 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ![image](https://user-images.githubusercontent.com/123575472/221086905-cf1cfcc0-763a-41d4-b46a-1a478a7be46a.png)
 # WEEK-1
 - **Installation of ALIGN is completed( steps are given above).**
-- Note: Follow the rules shown in the link , which helps to complete the task fast. https://docs.google.com/document/d/1RldOLssqc29qNuLmmlAmxlnkeW40NMr4uQ9kXzd2MMI/edit
+- Note: Follow the rules in the below link , which helps to complete the task.
+        
+        https://docs.google.com/document/d/1RldOLssqc29qNuLmmlAmxlnkeW40NMr4uQ9kXzd2MMI/edit
 ### Inverter post-layout characterization using ALIGN tool:
 - **steps to be followed**:
 ```
@@ -673,9 +675,11 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ![image](https://user-images.githubusercontent.com/123575472/221496322-494d1baa-2f3e-4eb5-9596-b88ca8dea59a.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
-![image](https://user-images.githubusercontent.com/123575472/221495814-0072224f-57ed-47af-b277-c9408118c207.png)
 
+- **.gds**
 ![image](https://user-images.githubusercontent.com/123575472/221497058-4e2d5ad4-ce59-4ebd-9a8b-47b4566cf61d.png)
+- **.lef**
+ ![image](https://user-images.githubusercontent.com/123575472/221500073-7ca81c1e-8865-4e39-88b8-7637462cacdf.png)
 
 
 
