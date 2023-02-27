@@ -667,7 +667,7 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ```
 - 1.Create a work directory in ALIGN-public folder.
   2.Make sure you have the inv_tb.spice file (created from lvs netlist in xschem) in that folder and rename it to .sp (Align reads .sp files) 
-  3.
+        =>set netlist Dir = /home/shakila12/Desktop/pd_rp/tools/ALIGN-public/work/
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221476694-70929109-4bfb-4c51-a213-d3d3dca5c125.png)
 - **Pre-layout netlist:**
