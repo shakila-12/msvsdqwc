@@ -684,8 +684,9 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
  ![image](https://user-images.githubusercontent.com/123575472/221500073-7ca81c1e-8865-4e39-88b8-7637462cacdf.png)
 
 - Now, open the magic (magic -T sky130A.tech) and read GDS file.
+![image](https://user-images.githubusercontent.com/123575472/221587329-31a51967-dd96-4a11-b058-683f735509ae.png)
 
-   For that, in layout window, go to file->Read GDS ->open the gds file.(Note: if only black box appears, click s(selects top cell in window) and then press x.)
+   Now, in layout window, go to file->Read GDS ->open the gds file.(Note: if only black box appears, click s(selects top cell in window) and then press x.)
    ![image](https://user-images.githubusercontent.com/123575472/221524653-6287cf76-8542-4237-8f9b-007bf1035bf8.png)
 - Extract the netlist using below commands:
   ```
