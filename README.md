@@ -676,13 +676,17 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 
 ![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
 
-- **.gds**
+- **.gds in klayout**
 
 ![image](https://user-images.githubusercontent.com/123575472/221497058-4e2d5ad4-ce59-4ebd-9a8b-47b4566cf61d.png)
-- **.lef**
+- **.lef in klayout**
 
  ![image](https://user-images.githubusercontent.com/123575472/221500073-7ca81c1e-8865-4e39-88b8-7637462cacdf.png)
 
+- Now, open the magic (magic -T sky130A.tech) and read GDS file.
+
+   For that, in layout window, go to file->Read GDS ->open the gds file.(Note: if only black box appears, click s(selects top cell in window) and then press x.)
+   ![image](https://user-images.githubusercontent.com/123575472/221524653-6287cf76-8542-4237-8f9b-007bf1035bf8.png)
 
 
 ## Design the below function using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
