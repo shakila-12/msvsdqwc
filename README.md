@@ -1126,6 +1126,12 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221345409-3a07e199-df71-494d-81ef-baf526616606.png)
 
+![image](https://user-images.githubusercontent.com/123575472/221468816-d86f3e0b-93f7-41e3-bb78-30766f2b7cb2.png)
+
+![image](https://user-images.githubusercontent.com/123575472/221470489-c8afc07f-b5a5-4dd9-96cb-e4823fa39844.png)
+
+![image](https://user-images.githubusercontent.com/123575472/221470853-459d3ce0-0f80-444a-a99b-555a28da44d2.png)
+
 
 
 
