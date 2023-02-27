@@ -665,14 +665,16 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ### Inverter post-layout characterization using ALIGN tool:
 - **steps to be followed**:
 ```
-- 1.Create a work directory in ALIGN-public folder.
+- 1.Create a build directory in ALIGN-public folder.
   2.Make sure you have the inv_tb.spice file (created from lvs netlist in xschem) in that folder and rename it to .sp (Align reads .sp files) 
-        =>set netlist Dir = /home/shakila12/Desktop/pd_rp/tools/ALIGN-public/work/
+        =>set netlist Dir = /home/shakila12/Desktop/pd_rp/tools/ALIGN-public/build/inv/inv.sp
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221476694-70929109-4bfb-4c51-a213-d3d3dca5c125.png)
+![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
+
 - **Pre-layout netlist:**
 ```
-
+```
 
 ## Design the below function using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
