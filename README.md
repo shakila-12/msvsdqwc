@@ -677,8 +677,10 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 ![image](https://user-images.githubusercontent.com/123575472/221494718-fa3bc040-7690-4f03-9133-e7d9fe32814b.png)
 
 - **.gds**
+
 ![image](https://user-images.githubusercontent.com/123575472/221497058-4e2d5ad4-ce59-4ebd-9a8b-47b4566cf61d.png)
 - **.lef**
+
  ![image](https://user-images.githubusercontent.com/123575472/221500073-7ca81c1e-8865-4e39-88b8-7637462cacdf.png)
 
 
