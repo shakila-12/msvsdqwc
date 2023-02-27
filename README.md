@@ -749,8 +749,10 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 ```
 ![image](https://user-images.githubusercontent.com/123575472/221281642-037968b1-19fa-432f-88b1-69a86ad797c9.png)
 - **Post-layout:**
+![image](https://user-images.githubusercontent.com/123575472/221465862-1e986666-e99c-4437-8f41-fcb4fbbeb008.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/221431078-684e6c38-8c6b-4b47-be59-069b0bd13722.png)
+
 ![image](https://user-images.githubusercontent.com/123575472/221431138-a3bbd1d9-3de0-4685-8947-01fc96e264a6.png)
 
 - **Netlist:**
@@ -1128,6 +1130,7 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 
 
 ## Design of the function and to perform postlayout characterisation using  ALIGN:
+
 ![image](https://user-images.githubusercontent.com/123575472/221224879-fa83eea3-05b4-4616-979b-a5ce636b72fa.png)
 - **Netlist**
 ```
