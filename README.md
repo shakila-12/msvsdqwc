@@ -696,6 +696,44 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
   ```
   - Extracted netlist:
   ```
+  * SPICE3 file created from INV_0.ext - technology: sky130A
+
+X0 VOUT VIN GND GND sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=4.452e+11p ps=4.42e+06u w=840000u l=150000u
+X1 GND VIN VOUT GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 VOUT VIN PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# sky130_fd_pr__pfet_01v8 ad=2.352e+11p pd=2.24e+06u as=4.452e+11p ps=4.42e+06u w=840000u l=150000u
+X3 VIN VOUT PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 VOUT PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# 0.83fF
+C1 VIN VOUT 0.24fF
+C2 VIN PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# 0.94fF
+C3 VIN GND 0.78fF **FLOATING
+C4 VOUT GND 0.57fF **FLOATING
+C5 PMOS_S_36030836_X1_Y1_1677500379_0/w_0_0# GND 3.26fF **FLOATING
+
+*****simulation added *****
+
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/invert_tran.sch
+.subckt invert_tran VDD GND Vin Vout
+*.PININFO VDD:B GND:B Vin:I Vout:O
+XM1 Vout Vin GND GND sky130_fd_pr__nfet_01v8 
+XM2 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 
+VDD VDD GND 1.8
+.save i(vdd)
+Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
+.save i(vin)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+run
+tran 0.01n 50n
+save all
+.endc
+**** end user architecture code
+.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end
+
   ```
 - Run the netlist: $ngspice INV_0 .txt
 - **Output:
