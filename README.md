@@ -684,7 +684,6 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
  ![image](https://user-images.githubusercontent.com/123575472/221500073-7ca81c1e-8865-4e39-88b8-7637462cacdf.png)
 
 - Now, open the magic (magic -T sky130A.tech) and read GDS file.
-![image](https://user-images.githubusercontent.com/123575472/221587329-31a51967-dd96-4a11-b058-683f735509ae.png)
 
    Now, in layout window, go to file->Read GDS ->open the gds file.(Note: if only black box appears, click s(selects top cell in window) and then press x.)
    ![image](https://user-images.githubusercontent.com/123575472/221524653-6287cf76-8542-4237-8f9b-007bf1035bf8.png)
@@ -695,6 +694,12 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
   ext2spice cthresh 0 rthresh 0
   ext2spice
   ```
+  - Extracted netlist:
+  ```
+  ```
+- Run the netlist: $ngspice INV_0 .txt
+- **Output:
+![image](https://user-images.githubusercontent.com/123575472/221811232-7688c8d4-ddef-4192-97b2-3a12527b347e.png)
 
 ## Design the below function using SKY130 PDKS and perform prelayout ,postlayout characterisation using Ngspice and Magic
 ![image](https://user-images.githubusercontent.com/123575472/220867893-6ebbe148-d81c-4a5a-bd9f-ee46d4f00db3.png)
