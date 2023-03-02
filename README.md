@@ -1226,26 +1226,16 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 - **Netlist**
 ```
 ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/fun_tb.sch
-**.subckt fun_tb A B C E D F A B C D E F out A B C D E F
+**.subckt fun_tb A B C E D F out VDD GND
 *.ipin A
 *.ipin B
 *.ipin C
 *.ipin E
 *.ipin D
-*.ipin F
-*.ipin A
-*.ipin B
-*.ipin C
-*.ipin D
-*.ipin E
 *.ipin F
 *.opin out
-*.ipin A
-*.ipin B
-*.ipin C
-*.ipin D
-*.ipin E
-*.ipin F
+*.ipin VDD
+*.ipin GND
 XM7 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.18 W=1.68 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -1294,7 +1284,7 @@ VDD4 D GND pulse(0 1.8 0.4n 10p 10p 1n 2n)
 .save i(vdd4)
 VDD5 E GND pulse(0 1.8 0.5n 10p 10p 1n 2n)
 .save i(vdd5)
-VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
+VDD6 F GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 .save i(vdd6)
 **** begin user architecture code
 
@@ -1308,5 +1298,6 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 .GLOBAL GND
 .end
 ```
+
 ![image](https://user-images.githubusercontent.com/123575472/222296427-f0e2242a-a38c-42ba-ae71-19f010e518cd.png)
 
