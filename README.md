@@ -1220,8 +1220,9 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 
 
 ## Design of the function and to perform postlayout characterisation using  ALIGN:
+![image](https://user-images.githubusercontent.com/123575472/222297538-ed433efa-9ad2-4c5b-ad13-c1c1c727f05a.png)
 
-![image](https://user-images.githubusercontent.com/123575472/221224879-fa83eea3-05b4-4616-979b-a5ce636b72fa.png)
+
 - **Netlist**
 ```
 ** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/fun_tb.sch
@@ -1307,4 +1308,5 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 .GLOBAL GND
 .end
 ```
-![image](https://user-images.githubusercontent.com/123575472/221221169-6177356e-ea1d-484f-bf1c-a2f8cadce223.png)
+![image](https://user-images.githubusercontent.com/123575472/222296427-f0e2242a-a38c-42ba-ae71-19f010e518cd.png)
+
