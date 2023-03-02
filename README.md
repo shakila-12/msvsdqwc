@@ -1304,22 +1304,43 @@ VDD6 F GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 ![image](https://user-images.githubusercontent.com/123575472/222304652-6112d8af-bf27-4b27-a10b-6c928153d53d.png)
 **Netlist (.sp)**
 ```
-.subckt fun_tb A B C E D F out VDD GND
-XM7 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM1 out A net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
-XM3 net4 B GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
-XM4 net4 D GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
-XM5 out E net5 net5 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+.subckt fun1_tb A B C E D F out VDD GND
+XM7 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM1 out A net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
+XM3 net4 B GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
+XM4 net4 D GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
+XM5 out E net5 net5 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
 XM6 net5 F GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
-XM8 net3 C net1 net1 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM9 net2 B VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM10 net3 D net2 net2 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM11 out E net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM12 out F net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
-XM2 out C net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
-.ends fun_tb
+XM8 net3 C net1 net1 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM9 net2 B VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM10 net3 D net2 net2 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM11 out E net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM12 out F net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=1
+XM2 out C net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
+.ends fun1_tb
 ```
-![image](https://user-images.githubusercontent.com/123575472/222304764-bee1594f-d951-4a85-94e4-1a3555b2adad.png)
+![image](https://user-images.githubusercontent.com/123575472/222416639-4bb0064a-6004-4826-a0bd-ffe1fdd0a7bc.png)
 
-![image](https://user-images.githubusercontent.com/123575472/222304300-0bd1b255-013c-41d6-a2cd-f580149aff0f.png)
+- **.lef**
+![image](https://user-images.githubusercontent.com/123575472/222414002-f4f068f3-abe6-4660-b517-577e0884d15c.png)
+- **.gds**
+![image](https://user-images.githubusercontent.com/123575472/222414450-7cbfc382-c1ed-4d41-99f5-10a1914b19f1.png)
+![image](https://user-images.githubusercontent.com/123575472/222415274-cbfd646f-42b8-4fa9-bb26-1e2c9dd81cbd.png)
+
+- **Magic layout**
+![image](https://user-images.githubusercontent.com/123575472/222415009-b5351427-6be3-4322-8e4a-0d335d50e2b3.png)
+- Use the following commands to extract spice netlist
+```
+extract do local
+excract all
+ext2spice hierarchy on
+ext2spice scale off
+ext2spice cthresh 0 rthresh 0
+ext2spice 
+```
+- **spice netlist**
+```
+
+```
+![image](https://user-images.githubusercontent.com/123575472/222413712-3b83ed7b-0321-4de8-8498-5c15ab073fa1.png)
 
