@@ -1302,7 +1302,23 @@ VDD6 F GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 
 ![image](https://user-images.githubusercontent.com/123575472/222296427-f0e2242a-a38c-42ba-ae71-19f010e518cd.png)
 ![image](https://user-images.githubusercontent.com/123575472/222304652-6112d8af-bf27-4b27-a10b-6c928153d53d.png)
-
+**Netlist (.sp)**
+```
+.subckt fun_tb A B C E D F out VDD GND
+XM7 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM1 out A net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+XM3 net4 B GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+XM4 net4 D GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+XM5 out E net5 net5 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+XM6 net5 F GND GND sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=1
+XM8 net3 C net1 net1 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM9 net2 B VDD VDD sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM10 net3 D net2 net2 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM11 out E net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM12 out F net3 net3 sky130_fd_pr__pfet_01v8 L=180n W=1680n nf=2 m=2
+XM2 out C net4 net4 sky130_fd_pr__nfet_01v8 L=180n W=840n nf=2 m=2
+.ends fun_tb
+```
 ![image](https://user-images.githubusercontent.com/123575472/222304764-bee1594f-d951-4a85-94e4-1a3555b2adad.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/222304300-0bd1b255-013c-41d6-a2cd-f580149aff0f.png)
