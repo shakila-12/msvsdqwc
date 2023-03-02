@@ -1220,6 +1220,7 @@ VDD6 net6 GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 
 
 ## Design of the function and to perform postlayout characterisation using  ALIGN:
+- **Design using xschem**:
 ![image](https://user-images.githubusercontent.com/123575472/222297538-ed433efa-9ad2-4c5b-ad13-c1c1c727f05a.png)
 
 
@@ -1300,4 +1301,9 @@ VDD6 F GND pulse(0 1.8 0.6n 10p 10p 1n 2n)
 ```
 
 ![image](https://user-images.githubusercontent.com/123575472/222296427-f0e2242a-a38c-42ba-ae71-19f010e518cd.png)
+![image](https://user-images.githubusercontent.com/123575472/222304652-6112d8af-bf27-4b27-a10b-6c928153d53d.png)
+
+![image](https://user-images.githubusercontent.com/123575472/222304764-bee1594f-d951-4a85-94e4-1a3555b2adad.png)
+
+![image](https://user-images.githubusercontent.com/123575472/222304300-0bd1b255-013c-41d6-a2cd-f580149aff0f.png)
 
