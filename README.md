@@ -1528,6 +1528,8 @@ X1 A B C E D F out VDD GND FUN1_TB_0
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## WEEK-2
 ### OPENROAD installation:
-Refer the following link https://theopenroadproject.org/resources/ and repo https://github.com/The-OpenROAD-Project/OpenROAD
+Refer the following link https://theopenroadproject.org/resources/ and the git repo https://github.com/The-OpenROAD-Project
+![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
+
 ![image](https://user-images.githubusercontent.com/123575472/222630229-6b3178e5-dccc-43f5-88af-468923180ab7.png)
 
