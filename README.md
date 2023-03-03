@@ -1532,7 +1532,8 @@ Refer the following link https://theopenroadproject.org/resources/ and the git r
 ![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/222630229-6b3178e5-dccc-43f5-88af-468923180ab7.png)
-- ** Steps to install:**
+
+- **Steps to install:**
 ```
 cd
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD.git
@@ -1549,8 +1550,9 @@ export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-s
 ### OpenFASoC Installation :
 
 OpenFASOC is focused on open-source automate analog generation from user specification to GDSII with fully open-sourced tools.
-
-Read the official document of OpenFASoC [here](https://openfasoc.readthedocs.io/en/latest/getting-started.html) and [git repo](https://github.com/idea-fasoc/openfasoc) to understand in detail.
+The tool is comprised of analog and mixed-signal circuit generators, which automatically create a physical design based on user specifications.
+Reference taken from the given [repo](https://github.com/sanampudig/OpenFASoC/tree/main/Temp_sence_gen%20FLOW)
+- Read the official document of OpenFASoC [here](https://openfasoc.readthedocs.io/en/latest/getting-started.html) and [git repo](https://github.com/idea-fasoc/openfasoc) to understand in detail. 
 - **Steps to install:**
 ```
 cd
@@ -1558,7 +1560,24 @@ git clone https://github.com/idea-fasoc/openfasoc
 cd openfasoc
 sudo ./dependencies.sh
 ```
+- After running the above commands ,we get the following result.
 ![image](https://user-images.githubusercontent.com/123575472/222678601-75fc9a48-b755-44af-8e9c-eb84ca73af6e.png)
 ![image](https://user-images.githubusercontent.com/123575472/222690031-435951c1-85d2-4ad4-b8af-e9a208009687.png)
 ![image](https://user-images.githubusercontent.com/123575472/222681110-3c22403d-2a79-43e5-9871-ced662badbf0.png)
+### Eg.Temperature Sensor Auxilary cells:
+![image](https://user-images.githubusercontent.com/123575472/222708361-d178fea5-c56c-44d0-94bb-26dc6290c203.png)
+This generator creates a compact mixed-signal temperature sensor based on the topology based on https://ieeexplore.ieee.org/document/9816083 It consists of a ring oscillator whose frequency is controlled by the voltage drop over a MOSFET operating in subthreshold regime, where its dependency on temperature is exponential.
+
+The physical implementation of the analog blocks in the circuit is done using two manually designed standard cells:
+
+HEADER cell, containing the transistors in subthreshold operation;
+
+SLC cell, containing the Split-Control Level Converter.
+
+- Now,view the gds and lef file of the auxilary cell.
+![image](https://user-images.githubusercontent.com/123575472/222712156-0034c7e4-23d5-4249-a1e3-9af31dda081b.png)
+![image](https://user-images.githubusercontent.com/123575472/222712469-be980da1-71a1-419f-a0b6-2aea8c770a14.png)
+
+![image](https://user-images.githubusercontent.com/123575472/222712344-93b2ff2f-1bbd-4414-9a3b-537b900d6f17.png)
+
 
