@@ -1613,4 +1613,6 @@ make sky130hd_temp_verilog
 ![image](https://user-images.githubusercontent.com/123575472/222779691-f64a407d-8c89-48f8-8026-a389840203ba.png)
 ![image](https://user-images.githubusercontent.com/123575472/222778214-a02c3632-b31d-411e-be0c-56bd3a9eb982.png) ![image](https://user-images.githubusercontent.com/123575472/222778567-0f1c5f84-e87a-4a5c-9f58-9e08aabde157.png)
 ### Synthesis
+The OpenROAD Flow starts with a flow configuration file config.mk, the chosen platform (sky130hd, for example) and the Verilog files are generated from the previous part.
+![image](https://user-images.githubusercontent.com/123575472/222782891-7d9bd719-c1ef-40ba-979b-5639fee9755e.png)
 
