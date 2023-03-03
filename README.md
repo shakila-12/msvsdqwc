@@ -1547,9 +1547,18 @@ export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-s
 ```
 ![image](https://user-images.githubusercontent.com/123575472/222656088-ac1e82fc-d89f-4bd5-86d2-e97aeba091c7.png)
 ### OpenFASoC Installation :
+
+OpenFASOC is focused on open-source automate analog generation from user specification to GDSII with fully open-sourced tools.
+
+Read the official document of OpenFASoC [here](https://openfasoc.readthedocs.io/en/latest/getting-started.html) and [git repo](https://github.com/idea-fasoc/openfasoc) to understand in detail.
+- **Steps to install:**
 ```
 cd
 git clone https://github.com/idea-fasoc/openfasoc
 cd openfasoc
-./dependencies.sh
+sudo ./dependencies.sh
 ```
+![image](https://user-images.githubusercontent.com/123575472/222678601-75fc9a48-b755-44af-8e9c-eb84ca73af6e.png)
+![image](https://user-images.githubusercontent.com/123575472/222690031-435951c1-85d2-4ad4-b8af-e9a208009687.png)
+![image](https://user-images.githubusercontent.com/123575472/222681110-3c22403d-2a79-43e5-9871-ced662badbf0.png)
+
