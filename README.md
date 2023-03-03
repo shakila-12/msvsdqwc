@@ -1532,4 +1532,24 @@ Refer the following link https://theopenroadproject.org/resources/ and the git r
 ![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/222630229-6b3178e5-dccc-43f5-88af-468923180ab7.png)
-
+- ** Steps to install:**
+```
+cd
+git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD.git
+cd OpenROAD
+./etc/DependencyInstaller.sh
+cd
+git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
+cd OpenROAD-flow-scripts
+./build_openroad.sh –local
+export OPENROAD=~/OpenROAD-flow-scripts/tools/OpenROAD
+export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-scripts/tools/install/yosys/bin:~/OpenROAD-flow-scripts/tools/install/LSOracle/bin:$PATH
+```
+![image](https://user-images.githubusercontent.com/123575472/222656088-ac1e82fc-d89f-4bd5-86d2-e97aeba091c7.png)
+### OpenFASoC Installation :
+```
+cd
+git clone https://github.com/idea-fasoc/openfasoc
+cd openfasoc
+./dependencies.sh
+```
