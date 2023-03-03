@@ -1603,10 +1603,14 @@ make sky130hd_temp_verilog
 ```
 ![image](https://user-images.githubusercontent.com/123575472/222759251-0c946d42-1b96-4b1e-8db6-f7b6d0bed1e9.png)
 -From the above figure, observe error,INV and Header.
-- The input for verilog generation is user specification(which tells user requirement to analog generator )i.e is present in the form of .json file.
+- The input for verilog generation is user specification(which tells user requirement to analog generator )i.e is present in the form of .json file and the output is verilog files.
  ![image](https://user-images.githubusercontent.com/123575472/222772423-a5cb5bd7-61fc-4004-adc8-956016ef9e6d.png)
 - The experimental data used to optimise the design as per the user requirement is given as model.csv file..
-- ![image](https://user-images.githubusercontent.com/123575472/222775451-5aab0f30-1cde-47fe-9016-d85d3f5e3327.png)
+ ![image](https://user-images.githubusercontent.com/123575472/222775451-5aab0f30-1cde-47fe-9016-d85d3f5e3327.png)
+ ![image](https://user-images.githubusercontent.com/123575472/222776178-f1e1fcf1-48c6-4dc6-ad2b-5abcce92c47e.png) 
 
-
+-The  directory of verilog file is shown below
+![image](https://user-images.githubusercontent.com/123575472/222779691-f64a407d-8c89-48f8-8026-a389840203ba.png)
+![image](https://user-images.githubusercontent.com/123575472/222778214-a02c3632-b31d-411e-be0c-56bd3a9eb982.png) ![image](https://user-images.githubusercontent.com/123575472/222778567-0f1c5f84-e87a-4a5c-9f58-9e08aabde157.png)
+### Synthesis
 
