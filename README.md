@@ -1589,4 +1589,24 @@ Run make <library>_<generator>_<mode> to begin the flow.
 Below is an example of options for the temp-sense generator:
 ```
 ![image](https://user-images.githubusercontent.com/123575472/222753523-0499d0d9-b8ce-4580-be16-8b003713b98c.png)
+- **Edited platform_config.json file**
+![image](https://user-images.githubusercontent.com/123575472/222758632-ae08c7b6-d793-48e1-9892-9257463718c7.png)
+- The default circuit's physical design generation can be divided into three parts:
+     Verilog generation
+     RTL-to-GDS flow
+     Post-layout verification
+     
+### Verilog generation:
+Run the follwing command,which runs verilog files.
+```
+make sky130hd_temp_verilog
+```
+![image](https://user-images.githubusercontent.com/123575472/222759251-0c946d42-1b96-4b1e-8db6-f7b6d0bed1e9.png)
+-From the above figure, observe error,INV and Header.
+- The input for verilog generation is user specification(which tells user requirement to analog generator )i.e is present in the form of .json file.
+ ![image](https://user-images.githubusercontent.com/123575472/222772423-a5cb5bd7-61fc-4004-adc8-956016ef9e6d.png)
+- The experimental data used to optimise the design as per the user requirement is given as model.csv file..
+- ![image](https://user-images.githubusercontent.com/123575472/222775451-5aab0f30-1cde-47fe-9016-d85d3f5e3327.png)
+
+
 
