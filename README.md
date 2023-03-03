@@ -1579,5 +1579,14 @@ SLC cell, containing the Split-Control Level Converter.
 ![image](https://user-images.githubusercontent.com/123575472/222712469-be980da1-71a1-419f-a0b6-2aea8c770a14.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/222712344-93b2ff2f-1bbd-4414-9a3b-537b900d6f17.png)
-
+## Run OpenFASoC Flow
+```
+First cd into the directory where the OpenFASoC repository was cloned;
+Now edit the platform_config.json file, replacing the open_pdks value with the path to the sky130A/ directory;
+Export the PDK_ROOT environment variable to your skywater-pdk location until the sky130A/ directory (not required if the dependencies are installed via the dependencies.sh script);
+Now go to one of the generators with cd openfasoc/generators/<generator_name> and run make to list down all the generator specific targets;
+Run make <library>_<generator>_<mode> to begin the flow.
+Below is an example of options for the temp-sense generator:
+```
+![image](https://user-images.githubusercontent.com/123575472/222753523-0499d0d9-b8ce-4580-be16-8b003713b98c.png)
 
