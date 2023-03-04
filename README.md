@@ -1530,15 +1530,12 @@ X1 A B C E D F out VDD GND FUN1_TB_0
 ### OPENROAD installation:
 Refer the following link https://theopenroadproject.org/resources/ and the git repo https://github.com/The-OpenROAD-Project
 ![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
-
-![image](https://user-images.githubusercontent.com/123575472/222630229-6b3178e5-dccc-43f5-88af-468923180ab7.png)
-
 - **Steps to install:**
 ```
 cd
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD.git
 cd OpenROAD
-./etc/DependencyInstaller.sh
+sudo ./etc/DependencyInstaller.sh
 cd
 git clone --recursive https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
 cd OpenROAD-flow-scripts
@@ -1546,6 +1543,10 @@ cd OpenROAD-flow-scripts
 export OPENROAD=~/OpenROAD-flow-scripts/tools/OpenROAD
 export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-scripts/tools/install/yosys/bin:~/OpenROAD-flow-scripts/tools/install/LSOracle/bin:$PATH
 ```
+![image](https://user-images.githubusercontent.com/123575472/222922963-61b1d0c7-ec82-472e-844b-b3ffe28a0d6d.png)
+![image](https://user-images.githubusercontent.com/123575472/222923066-b9ff31d3-7f0d-4ab2-b1f5-f8c4a0cbd421.png)
+![image](https://user-images.githubusercontent.com/123575472/222923117-5b7dd011-e4a7-40ab-ab6f-29d786c6bd82.png)
+
 ![image](https://user-images.githubusercontent.com/123575472/222656088-ac1e82fc-d89f-4bd5-86d2-e97aeba091c7.png)
 ### OpenFASoC Installation :
 
