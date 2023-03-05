@@ -1546,8 +1546,8 @@ export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-s
 ![image](https://user-images.githubusercontent.com/123575472/222922963-61b1d0c7-ec82-472e-844b-b3ffe28a0d6d.png)
 ![image](https://user-images.githubusercontent.com/123575472/222923066-b9ff31d3-7f0d-4ab2-b1f5-f8c4a0cbd421.png)
 ![image](https://user-images.githubusercontent.com/123575472/222923117-5b7dd011-e4a7-40ab-ab6f-29d786c6bd82.png)
+![image](https://user-images.githubusercontent.com/123575472/222941662-3c9c4255-bca7-4644-b2af-b3d315dde4af.png)
 
-![image](https://user-images.githubusercontent.com/123575472/222656088-ac1e82fc-d89f-4bd5-86d2-e97aeba091c7.png)
 ### OpenFASoC Installation :
 
 OpenFASOC is focused on open-source automate analog generation from user specification to GDSII with fully open-sourced tools.
@@ -1562,9 +1562,8 @@ cd openfasoc
 sudo ./dependencies.sh
 ```
 - After running the above commands ,we get the following result.
-![image](https://user-images.githubusercontent.com/123575472/222678601-75fc9a48-b755-44af-8e9c-eb84ca73af6e.png)
+![image](https://user-images.githubusercontent.com/123575472/222942802-35d35f45-2b99-4735-8647-597007951149.png)
 ![image](https://user-images.githubusercontent.com/123575472/222690031-435951c1-85d2-4ad4-b8af-e9a208009687.png)
-![image](https://user-images.githubusercontent.com/123575472/222681110-3c22403d-2a79-43e5-9871-ced662badbf0.png)
 ### Eg.Temperature Sensor Auxilary cells:
 ![image](https://user-images.githubusercontent.com/123575472/222708361-d178fea5-c56c-44d0-94bb-26dc6290c203.png)
 This generator creates a compact mixed-signal temperature sensor based on the topology based on https://ieeexplore.ieee.org/document/9816083 It consists of a ring oscillator whose frequency is controlled by the voltage drop over a MOSFET operating in subthreshold regime, where its dependency on temperature is exponential.
