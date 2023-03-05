@@ -1588,7 +1588,7 @@ Now go to one of the generators with cd openfasoc/generators/<generator_name> an
 Run make <library>_<generator>_<mode> to begin the flow.
 Below is an example of options for the temp-sense generator:
 ```
-![image](https://user-images.githubusercontent.com/123575472/222753523-0499d0d9-b8ce-4580-be16-8b003713b98c.png)
+![image](https://user-images.githubusercontent.com/123575472/222943455-9356cdb6-cf78-4c1e-8722-b0f462ebb142.png)
 - The default circuit's physical design generation can be divided into three parts:
           1. Verilog generation
           2. RTL-to-GDS flow
@@ -1599,8 +1599,7 @@ Run the follwing command,which runs verilog files.
 ```
 make sky130hd_temp_verilog
 ```
-![image](https://user-images.githubusercontent.com/123575472/222894109-1192e207-23b6-499c-b8fa-3c0a77fa84df.png)
-
+![image](https://user-images.githubusercontent.com/123575472/222943601-c13b1193-1cbb-4ce4-b6ad-85fe29554902.png)
 - The input for verilog generation is user specification(which tells user requirement to analog generator )i.e is present in the form of .json file and the output is verilog files.
  ![image](https://user-images.githubusercontent.com/123575472/222772423-a5cb5bd7-61fc-4004-adc8-956016ef9e6d.png)
 - The experimental data used to optimise the design as per the user requirement is given as model.csv file..
