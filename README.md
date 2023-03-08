@@ -1617,9 +1617,8 @@ The OpenROAD Flow starts with a flow configuration file config.mk, the chosen pl
 - Run the synthesis:
 make sky130hd_temp
 ![image](https://user-images.githubusercontent.com/123575472/222786208-1be803e0-c98e-4cd4-bde5-74680e5c2eaf.png)
-![image](https://user-images.githubusercontent.com/123575472/222796952-964b94ab-c885-4c7e-abdd-d9ac34e74375.png)
-![image](https://user-images.githubusercontent.com/123575472/222797006-b951f4fe-c6d5-430b-8bc1-c0382615afa7.png)
-###With the above error PNR is stopped.
+
+
 
 ![image](https://user-images.githubusercontent.com/123575472/223457787-1c806c69-02cf-4339-a5e4-df15b50114e0.png)
 
