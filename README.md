@@ -1617,8 +1617,12 @@ The OpenROAD Flow starts with a flow configuration file config.mk, the chosen pl
 - Run the synthesis:
 make sky130hd_temp
 ![image](https://user-images.githubusercontent.com/123575472/222786208-1be803e0-c98e-4cd4-bde5-74680e5c2eaf.png)
-
-
+If we get OpenROAD path error, run the below commands:
+```
+export OPENROAD=~/OpenROAD-flow-scripts/tools/OpenROAD
+export PATH=~/OpenROAD-flow-scripts/tools/install/OpenROAD/bin:~/OpenROAD-flow-scripts/tools/install/yosys/bin:~/OpenROAD-flow-scripts/tools/install/LSOracle/bin:$PATH
+export PDK_ROOT=/usr/local/share/pdk
+```
 
 ![image](https://user-images.githubusercontent.com/123575472/223457787-1c806c69-02cf-4339-a5e4-df15b50114e0.png)
 
