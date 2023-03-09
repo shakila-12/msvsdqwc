@@ -1666,6 +1666,6 @@ A ring oscillator is a device composed of an odd number of NOT gates in a ring, 
 ![image](https://user-images.githubusercontent.com/123575472/223944696-2b5926af-59cb-4ee6-a26c-f630a5b3072a.png)
 
 ## 3.1.Three-stage ring oscillator in Xschem 
-
+![image](https://user-images.githubusercontent.com/123575472/224044164-1d81de22-01f3-47d6-bed4-54f03d996787.png)
 
 
