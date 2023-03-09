@@ -1608,14 +1608,19 @@ make sky130hd_temp_verilog
 
 -The  directory of verilog file is shown below
 ![image](https://user-images.githubusercontent.com/123575472/222779691-f64a407d-8c89-48f8-8026-a389840203ba.png)
-![image](https://user-images.githubusercontent.com/123575472/222778214-a02c3632-b31d-411e-be0c-56bd3a9eb982.png) ![image](https://user-images.githubusercontent.com/123575472/222778567-0f1c5f84-e87a-4a5c-9f58-9e08aabde157.png)
+![image](https://user-images.githubusercontent.com/123575472/222778214-a02c3632-b31d-411e-be0c-56bd3a9eb982.png)
+
+![image](https://user-images.githubusercontent.com/123575472/222778567-0f1c5f84-e87a-4a5c-9f58-9e08aabde157.png)
 ### Synthesis
 The OpenROAD Flow starts with a flow configuration file config.mk, the chosen platform (sky130hd, for example) and the Verilog files are generated from the previous part.
+- Note:OpenROAD flow has diff.tools to implement RTL2GDS(synthesis,floorplan,placement.....)
 ![image](https://user-images.githubusercontent.com/123575472/222782891-7d9bd719-c1ef-40ba-979b-5639fee9755e.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/222783885-d6495bee-7862-46e7-beec-e02a57c4aa0f.png)
-- Run the synthesis:
+- Run the synthesis: Tool used -> yosys (tech. mapping done by ABC);inputs are -> config.mk,and verilog file
+```
 make sky130hd_temp
+```
 ![image](https://user-images.githubusercontent.com/123575472/222786208-1be803e0-c98e-4cd4-bde5-74680e5c2eaf.png)
 If we get OpenROAD path error, run the below commands:
 ```
@@ -1625,4 +1630,19 @@ export PDK_ROOT=/usr/local/share/pdk
 ```
 
 ![image](https://user-images.githubusercontent.com/123575472/223457787-1c806c69-02cf-4339-a5e4-df15b50114e0.png)
+- The above command (make sky130hd_temp) will run the complete flow from verilog generation to the final GDS.
+- ![image](https://user-images.githubusercontent.com/123575472/223881676-ff2b8925-be26-426d-9a9a-d3cad5ee0a2f.png)
+- The snap of synthesized netlist is shown below, which contains standard cells of sky130hd library and auxilary cells(header and slc)
+ ![image](https://user-images.githubusercontent.com/123575472/223882967-b931a8f6-c322-40fb-b575-bcae45de5129.png)
+### Floorplan
+The floorplan for the physical design is generated with OpenROAD, which requires a description of the power delivery network in pdn.cfg.
+![image](https://user-images.githubusercontent.com/123575472/223884116-0586895f-3900-4668-8602-a29a85165e63.png)
+The floorplan report is shown below:
+
+![image](https://user-images.githubusercontent.com/123575472/223885094-49760f2b-ed3a-4b8e-8517-e9410a2ffcc2.png)
+
+
+
+
+
 
