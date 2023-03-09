@@ -1640,8 +1640,11 @@ The floorplan for the physical design is generated with OpenROAD, which requires
 The floorplan report is shown below:
 
 ![image](https://user-images.githubusercontent.com/123575472/223885094-49760f2b-ed3a-4b8e-8517-e9410a2ffcc2.png)
-
-
+### Placement
+Placement is of 2 types , i.e.,Global and Detail
+![image](https://user-images.githubusercontent.com/123575472/223887226-88f6fca3-34a4-427d-956e-25428127ad84.png)
+Area utilisation and power consumption has been increased.
+![image](https://user-images.githubusercontent.com/123575472/223887719-ab8eeea9-db1a-45e9-91b6-a7369940e8c3.png)
 
 
 
