@@ -1655,8 +1655,10 @@ Routing is also divided into two phases: global routing and detailed routing. Ri
 
 ### Final Layout
 ![image](https://user-images.githubusercontent.com/123575472/223891977-69b1c517-e7b8-4cc4-9088-d89b494efc91.png)
-
 ![image](https://user-images.githubusercontent.com/123575472/223891522-29a195a1-8474-4283-91b3-3af1c946276b.png)
+ - **Layout by magic:**
+    ![image](https://user-images.githubusercontent.com/123575472/224007714-b6fde6cd-2b79-4796-9efd-3429629fb310.png)
+
 
 # WEEK 3
 
