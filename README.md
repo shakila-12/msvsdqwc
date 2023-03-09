@@ -1645,6 +1645,16 @@ Placement is of 2 types , i.e.,Global and Detail
 ![image](https://user-images.githubusercontent.com/123575472/223887226-88f6fca3-34a4-427d-956e-25428127ad84.png)
 Area utilisation and power consumption has been increased.
 ![image](https://user-images.githubusercontent.com/123575472/223887719-ab8eeea9-db1a-45e9-91b6-a7369940e8c3.png)
+### Routing
+Routing is also divided into two phases: global routing and detailed routing. Right before global routing, OpenFASoC calls /openfasoc/openfasoc/generators/temp-sense-gen/flow/scripts/openfasocpre_global_route.tcl:
+
+![image](https://user-images.githubusercontent.com/123575472/223890299-ccfb61d3-675f-408f-9285-f834cd322505.png)
+![image](https://user-images.githubusercontent.com/123575472/223890661-42f4d910-5037-47ee-9420-e36d90da0205.png)
+
+### Final Layout
+![image](https://user-images.githubusercontent.com/123575472/223891522-29a195a1-8474-4283-91b3-3af1c946276b.png)
+
+
 
 
 
