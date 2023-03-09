@@ -1660,6 +1660,8 @@ Routing is also divided into two phases: global routing and detailed routing. Ri
 
 # WEEK 3
 
+A ring oscillator is a device composed of an odd number of NOT gates in a ring, whose output oscillates between two voltage levels, representing true and false. The NOT gates, or inverters, are attached in a chain and the output of the last inverter is fed back into the first.
+![image](https://user-images.githubusercontent.com/123575472/223944696-2b5926af-59cb-4ee6-a26c-f630a5b3072a.png)
 
 
 
