@@ -1673,3 +1673,4 @@ A ring oscillator is a device composed of an odd number of NOT gates in a ring, 
 ```
 ```
 
+
