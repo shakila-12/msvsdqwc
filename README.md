@@ -664,6 +664,8 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 - Note: Follow the rules in the below link , which helps to complete the task.
         
         https://docs.google.com/document/d/1RldOLssqc29qNuLmmlAmxlnkeW40NMr4uQ9kXzd2MMI/edit
+       
+- **Need of ALIGN**:As analog circuits contains trasistors, so for transistor level routing we need this.(Though we know openroad flow does routing but ,this openroad doesnt do transistor level routing).        
 ### Inverter post-layout characterization using ALIGN tool:
 - **steps to be followed**:
 ```
