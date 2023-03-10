@@ -1885,7 +1885,178 @@ V1 VDD GND 1.8
 ![image](https://user-images.githubusercontent.com/123575472/224331065-0299c44b-0462-4205-849d-2679d3b52ddb.png)
 Note: While modifying postlayout netlist, use prelayout spice netlist which is not lvs one(xschem->simulation->lvs netlist:toplevel netlist isa .subckt).
 ## Final output using align:
+- **ring_osc.sp file:**
+```
+.subckt ring_osc VDD Y GND
+*.PININFO VDD:B GND:B Y:O
+XM1 net1 Y VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=4 m=1
+XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=4 m=1
+XM3 Y net2 VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=4 m=1
+XM4 net1 Y GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=4 m=1
+XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=4 m=1
+XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=4 m=1
+.ends
+```
+- After giving the schematiclayout command (shown above in the example) run magic and final layout is shown below.
 ![image](https://user-images.githubusercontent.com/123575472/224336362-0a9d223a-6dff-4594-a19d-98f03c48bc2b.png)
+- **Post-layout netlist**:
+```
+* NGSPICE file created from RING_OSC_0.ext - technology: sky130A
+
+.subckt PMOS_S_62085854_X2_Y1_1678455208_1678455208 a_200_252# a_230_399# w_0_0# SUB
+X0 w_0_0# a_200_252# a_230_399# w_0_0# sky130_fd_pr__pfet_01v8 ad=1.3608e+12p pd=1.17e+07u as=9.408e+11p ps=7.84e+06u w=1.68e+06u l=150000u
+X1 a_230_399# a_200_252# w_0_0# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X2 w_0_0# a_200_252# a_230_399# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X3 a_230_399# a_200_252# w_0_0# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+C0 w_0_0# a_200_252# 1.06fF
+C1 a_230_399# a_200_252# 0.19fF
+C2 w_0_0# a_230_399# 1.54fF
+C3 a_230_399# SUB -0.06fF
+C4 a_200_252# SUB 0.14fF
+C5 w_0_0# SUB 3.51fF
+.ends
+
+.subckt NMOS_S_97312901_X2_Y1_1678455207_1678455208 a_200_252# a_230_483# a_147_483#
+X0 a_147_483# a_200_252# a_230_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=6.804e+11p pd=6.66e+06u as=4.704e+11p ps=4.48e+06u w=840000u l=150000u
+X1 a_230_483# a_200_252# a_147_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 a_147_483# a_200_252# a_230_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X3 a_230_483# a_200_252# a_147_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 a_200_252# a_230_483# 0.22fF
+C1 a_230_483# a_147_483# 1.46fF
+C2 a_200_252# a_147_483# 1.47fF
+.ends
+
+.subckt INV_59131624_0_0_1678455208 PMOS_S_62085854_X2_Y1_1678455208_1678455208_0/w_0_0#
++ m1_226_560# SUB m1_312_1400#
+XPMOS_S_62085854_X2_Y1_1678455208_1678455208_0 m1_226_560# m1_312_1400# PMOS_S_62085854_X2_Y1_1678455208_1678455208_0/w_0_0#
++ SUB PMOS_S_62085854_X2_Y1_1678455208_1678455208
+XNMOS_S_97312901_X2_Y1_1678455207_1678455208_0 m1_226_560# m1_312_1400# SUB NMOS_S_97312901_X2_Y1_1678455207_1678455208
+C0 PMOS_S_62085854_X2_Y1_1678455208_1678455208_0/w_0_0# m1_226_560# 0.40fF
+C1 m1_312_1400# m1_226_560# 0.27fF
+C2 PMOS_S_62085854_X2_Y1_1678455208_1678455208_0/w_0_0# m1_312_1400# 0.02fF
+C3 m1_312_1400# SUB 1.34fF
+C4 m1_226_560# SUB 1.84fF
+C5 PMOS_S_62085854_X2_Y1_1678455208_1678455208_0/w_0_0# SUB 3.60fF
+.ends
+
+.subckt NMOS_S_97312901_X2_Y1_1678455206_1678455209 a_200_252# a_230_483# a_147_483#
+X0 a_147_483# a_200_252# a_230_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=6.804e+11p pd=6.66e+06u as=4.704e+11p ps=4.48e+06u w=840000u l=150000u
+X1 a_230_483# a_200_252# a_147_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 a_147_483# a_200_252# a_230_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X3 a_230_483# a_200_252# a_147_483# a_147_483# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 a_200_252# a_230_483# 0.22fF
+C1 a_230_483# a_147_483# 1.46fF
+C2 a_200_252# a_147_483# 1.47fF
+.ends
+
+.subckt PMOS_S_62085854_X2_Y1_1678455207_1678455209 a_200_252# a_230_399# w_0_0# SUB
+X0 w_0_0# a_200_252# a_230_399# w_0_0# sky130_fd_pr__pfet_01v8 ad=1.3608e+12p pd=1.17e+07u as=9.408e+11p ps=7.84e+06u w=1.68e+06u l=150000u
+X1 a_230_399# a_200_252# w_0_0# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X2 w_0_0# a_200_252# a_230_399# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X3 a_230_399# a_200_252# w_0_0# w_0_0# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+C0 a_230_399# a_200_252# 0.19fF
+C1 w_0_0# a_200_252# 1.06fF
+C2 a_230_399# w_0_0# 1.54fF
+C3 a_230_399# SUB -0.06fF
+C4 a_200_252# SUB 0.14fF
+C5 w_0_0# SUB 3.51fF
+.ends
+
+.subckt STAGE2_INV_66130952_0_0_1678455209 li_663_571# m1_312_1400# m1_398_2240# m1_1086_560#
++ SUB
+XNMOS_S_97312901_X2_Y1_1678455206_1678455209_0 li_663_571# m1_312_1400# SUB NMOS_S_97312901_X2_Y1_1678455206_1678455209
+XNMOS_S_97312901_X2_Y1_1678455206_1678455209_1 m1_1086_560# li_663_571# SUB NMOS_S_97312901_X2_Y1_1678455206_1678455209
+XPMOS_S_62085854_X2_Y1_1678455207_1678455209_0 li_663_571# m1_312_1400# m1_398_2240#
++ SUB PMOS_S_62085854_X2_Y1_1678455207_1678455209
+XPMOS_S_62085854_X2_Y1_1678455207_1678455209_1 m1_1086_560# li_663_571# m1_398_2240#
++ SUB PMOS_S_62085854_X2_Y1_1678455207_1678455209
+C0 m1_312_1400# m1_398_2240# 0.05fF
+C1 m1_1086_560# m1_312_1400# 0.01fF
+C2 m1_1086_560# m1_398_2240# 0.44fF
+C3 m1_312_1400# li_663_571# 0.04fF
+C4 m1_398_2240# li_663_571# 1.29fF
+C5 m1_1086_560# li_663_571# 0.36fF
+C6 m1_1086_560# SUB 1.88fF
+C7 m1_312_1400# SUB 1.35fF
+C8 li_663_571# SUB 2.01fF
+C9 m1_398_2240# SUB 5.99fF
+.ends
+
+.subckt RING_OSC_0
+XINV_59131624_0_0_1678455208_0 m1_742_2240# m1_430_1568# SUB m1_774_4424# INV_59131624_0_0_1678455208
+XSTAGE2_INV_66130952_0_0_1678455209_0 STAGE2_INV_66130952_0_0_1678455209_0/li_663_571#
++ m1_430_1568# m1_742_2240# m1_774_4424# SUB STAGE2_INV_66130952_0_0_1678455209
+C0 m1_774_4424# m1_742_2240# 0.19fF
+C1 GND STAGE2_INV_66130952_0_0_1678455209_0/li_663_571# 0.42fF
+C2 m1_430_1568# STAGE2_INV_66130952_0_0_1678455209_0/li_663_571# 0.15fF
+C3 GND VDD 1.07fF
+C4 VDD m1_430_1568# 1.13fF
+C5 Y STAGE2_INV_66130952_0_0_1678455209_0/li_663_571# 0.01fF
+C6 Y VDD 0.26fF
+C7 m1_774_4424# VDD 0.15fF
+C8 GND m1_430_1568# 0.05fF
+C9 GND Y -0.09fF
+C10 VDD STAGE2_INV_66130952_0_0_1678455209_0/li_663_571# 0.13fF
+C11 Y m1_430_1568# 0.00fF
+C12 m1_774_4424# m1_430_1568# 0.01fF
+C13 m1_430_1568# m1_742_2240# 0.18fF
+C14 VDD SUB 0.51fF $ **FLOATING
+C15 m1_430_1568# SUB 2.67fF
+C16 STAGE2_INV_66130952_0_0_1678455209_0/li_663_571# SUB 1.55fF
+C17 m1_742_2240# SUB 9.97fF
+C18 m1_774_4424# SUB 3.93fF
+.ends
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc_1.sch
+**.subckt ring_osc_1 Y VDD VSS
+*.opin Y
+*.iopin VDD
+*.iopin VSS
+x1 VDD Y VSS ring_osc
+V1 VDD GND 1.8
+.save i(v1)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 5n
+.save all
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ring_osc/ring_osc.sym # of pins=3
+** sym_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sym
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sch
+.subckt ring_osc VDD Y GND
+*.iopin VDD
+*.iopin GND
+*.opin Y
+XM1 net1 Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Y GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end
+
+```
 
 ![image](https://user-images.githubusercontent.com/123575472/224335090-13c44e2a-7cf0-4272-91cf-2c5809e55cc9.png)
 
