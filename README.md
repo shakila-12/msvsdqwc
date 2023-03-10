@@ -1805,3 +1805,65 @@ schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
 Running a EXAMPLE on Sky130pdk:
 schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
 ```
+- **ring_osc.sp file:**
+```
+.subckt ring_osc VDD Y GND
+*.PININFO VDD:B GND:B Y:O
+XM1 net1 Y VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=2 m=1
+XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=2 m=1
+XM3 Y net2 VDD VDD sky130_fd_pr__pfet_01v8 L=150n W=1680n nf=2 m=1
+XM4 net1 Y GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
+XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
+XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
+.ends
+```
+-** Magic extracted netlist(edited)**:
+```
+* SPICE3 file created from RING_OSC_0.ext - technology: sky130A
+.subckt ring_osc VDD Y GND
+X0 li_405_1579# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# SUB SUB sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=1.3356e+12p ps=1.326e+07u w=840000u l=150000u
+X1 SUB STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# li_405_1579# SUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# m1_688_4424# SUB SUB sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X3 SUB m1_688_4424# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# SUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X4 li_405_1579# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# m1_398_2912# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=4.704e+11p pd=3.92e+06u as=2.6712e+12p ps=2.334e+07u w=1.68e+06u l=150000u
+X5 m1_398_2912# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# li_405_1579# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X6 STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# m1_688_4424# m1_398_2912# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=4.704e+11p pd=3.92e+06u as=0p ps=0u w=1.68e+06u l=150000u
+X7 m1_398_2912# m1_688_4424# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+X8 m1_688_4424# li_405_1579# SUB SUB sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X9 SUB li_405_1579# m1_688_4424# SUB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X10 m1_688_4424# li_405_1579# m1_398_2912# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=4.704e+11p pd=3.92e+06u as=0p ps=0u w=1.68e+06u l=150000u
+X11 m1_398_2912# li_405_1579# m1_688_4424# m1_398_2912# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.68e+06u l=150000u
+C0 li_405_1579# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 0.56fF
+C1 Y STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 0.00fF
+C2 VDD STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 0.03fF
+C3 m1_688_4424# m1_398_2912# 2.06fF
+C4 m1_398_2912# li_405_1579# 1.92fF
+C5 li_405_1579# GND 0.14fF
+C6 m1_688_4424# li_405_1579# 0.44fF
+C7 Y GND 0.02fF
+C8 m1_398_2912# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 2.90fF
+C9 VDD GND 0.24fF
+C10 m1_688_4424# VDD 0.32fF
+C11 Y li_405_1579# 0.01fF
+C12 GND STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 0.15fF
+C13 m1_688_4424# STAGE2_INV_27873531_0_0_1678436066_0/li_491_571# 0.58fF
+C14 VDD li_405_1579# 1.31fF
+C15 Y VDD 0.24fF
+C16 VDD SUB 0.16fF
+
+.ends
+x1 VDD Y GND ring_osc
+V1 VDD GND 1.8
+
+
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 5n
+.save all
+
+
+.GLOBAL GND
+.end
+```
