@@ -1879,9 +1879,18 @@ V1 VDD GND 1.8
 - **Postlayout simulation**:(which is not correct)
 ![image](https://user-images.githubusercontent.com/123575472/224274676-f0738b54-526d-4b84-b93b-dc0c5e53a3e3.png)
 
-## Tried to change nf values to get simulation output(nf =10)
+## Tried to change nf values to get simulation output(nf =10,4)
 ![image](https://user-images.githubusercontent.com/123575472/224327765-dc91c119-a344-4932-bed7-429da315f6a1.png)
 ![image](https://user-images.githubusercontent.com/123575472/224328295-957cf6a5-20d1-448f-9d11-e4ec6e2ebdb2.png)
-## Still its wrong!!:( HAS TO DO SOME ANALYSIS TO GET OUTPUT.
+![image](https://user-images.githubusercontent.com/123575472/224331065-0299c44b-0462-4205-849d-2679d3b52ddb.png)
+Note: While modifying postlayout netlist, use prelayout spice netlist which is not lvs one(xschem->simulation->lvs netlist:toplevel netlist isa .subckt).
+## Final output using align:
+![image](https://user-images.githubusercontent.com/123575472/224336362-0a9d223a-6dff-4594-a19d-98f03c48bc2b.png)
+
+![image](https://user-images.githubusercontent.com/123575472/224335090-13c44e2a-7cf0-4272-91cf-2c5809e55cc9.png)
+
+
+# WEEK 4
+## TASK:
 
 
