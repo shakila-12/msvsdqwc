@@ -1665,9 +1665,9 @@ Routing is also divided into two phases: global routing and detailed routing. Ri
 A ring oscillator is a device composed of an odd number of NOT gates in a ring, whose output oscillates between two voltage levels, representing true and false. The NOT gates, or inverters, are attached in a chain and the output of the last inverter is fed back into the first.
 ![image](https://user-images.githubusercontent.com/123575472/223944696-2b5926af-59cb-4ee6-a26c-f630a5b3072a.png)
 
-## 3.1.Three-stage ring oscillator in Xschem 
-![image](https://user-images.githubusercontent.com/123575472/224044164-1d81de22-01f3-47d6-bed4-54f03d996787.png)
-![image](https://user-images.githubusercontent.com/123575472/224093390-066f7a57-bdb5-4030-b443-1aaac6973d13.png)
+## 3.1.Three-stage ring oscillator in Xschem
+![image](https://user-images.githubusercontent.com/123575472/224225268-b91aaa7c-2989-4d7b-9ac4-22dde58290ed.png)
+![image](https://user-images.githubusercontent.com/123575472/224223595-55183fa4-db9f-4567-8529-093eef9ce76c.png)
 ![image](https://user-images.githubusercontent.com/123575472/224094977-ded56ef8-f1ee-4e42-9787-06a2636eb248.png)
 - **Prelayout netlist**:
 ```
@@ -1722,6 +1722,8 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 ```
 ## Post-layout using magic
 GO to xschem_tb.sch -> simulation-> LVS netlist. Now,open magic folder and run magic -Tsky130A.tech => layout window appears. Go to File->IMPORT SPICE-> open the spice netlist folder and then press V .After checking drcs and routing the final layout is shown below.
+![image](https://user-images.githubusercontent.com/123575472/224224833-cfdef6e4-e268-4f9a-a35d-4500dc6a1862.png)
+
 - **postlayout netlist**
 ```
 * NGSPICE file created from ring_osc.ext - technology: sky130A
@@ -1777,3 +1779,4 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
 .end
 ```
 
+![image](https://user-images.githubusercontent.com/123575472/224223415-c4ac0974-fba6-466f-ad74-aa47c37cb973.png)
