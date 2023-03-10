@@ -1781,7 +1781,7 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
 
 ![image](https://user-images.githubusercontent.com/123575472/224223415-c4ac0974-fba6-466f-ad74-aa47c37cb973.png)
 ## Post-layout using ALIGN
-- **NOTE:
+- **NOTE:**
 ```
 1.Running ALIGN TOOL Everytime: we start running tool in new terminal run following commands.
 ## creating  a python virtualenv
@@ -1817,6 +1817,15 @@ XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
 XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
 .ends
 ```
+![image](https://user-images.githubusercontent.com/123575472/224274124-f7799f35-5eda-4bd7-8671-373580dd17a0.png)
+![image](https://user-images.githubusercontent.com/123575472/224277011-03b68212-fbac-4cd2-ab40-4b8b4fe4ee67.png)
+
+![image](https://user-images.githubusercontent.com/123575472/224276595-f5f4a442-851f-4afa-bd15-e4b7ecb9c065.png)
+![image](https://user-images.githubusercontent.com/123575472/224276791-60536f33-c802-4cf8-8cd1-ecb42a13e04b.png)
+
+-**Read gds file in magic layout window:**(use magic -T SKY130A.tech)
+![image](https://user-images.githubusercontent.com/123575472/224275093-9db69bf4-f4d5-48ad-bbf2-21e1832d2fee.png)
+
 -** Magic extracted netlist(edited)**:
 ```
 * SPICE3 file created from RING_OSC_0.ext - technology: sky130A
@@ -1867,3 +1876,6 @@ V1 VDD GND 1.8
 .GLOBAL GND
 .end
 ```
+-**Postlayout simulation**:(which is not correct)
+![image](https://user-images.githubusercontent.com/123575472/224274676-f0738b54-526d-4b84-b93b-dc0c5e53a3e3.png)
+
