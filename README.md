@@ -1785,15 +1785,18 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
 ```
 1.Running ALIGN TOOL Everytime: we start running tool in new terminal run following commands.
 ## creating  a python virtualenv
- python -m venv general
+ python3 -m venv general
  source general/bin/activate
  python -m pip install pip --upgrade
 ----------------------------------------------------
 2.Commands to run ALIGN (goto ALIGN-public directory)
  mkdir work
  cd work
+ -------------------------------------------------
+3. For the circuit design,go to Xschem->simuation->LVS netlist.
+Consider the LVS netlist and save file as filename.sp in the alignpublic/work folder. 
  ------------------------------------------------
-3.General syntax to give inputs
+4.General syntax to give inputs
 schematic2layout.py <NETLIST_DIR> -p <PDK_DIR> -c
 
 Running a EXAMPLE:
