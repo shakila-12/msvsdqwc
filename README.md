@@ -1665,7 +1665,7 @@ Routing is also divided into two phases: global routing and detailed routing. Ri
 A ring oscillator is a device composed of an odd number of NOT gates in a ring, whose output oscillates between two voltage levels, representing true and false. The NOT gates, or inverters, are attached in a chain and the output of the last inverter is fed back into the first.
 ![image](https://user-images.githubusercontent.com/123575472/223944696-2b5926af-59cb-4ee6-a26c-f630a5b3072a.png)
 
-## 3.1.Three-stage ring oscillator in Xschem
+## Three-stage ring oscillator in Xschem
 ![image](https://user-images.githubusercontent.com/123575472/224225268-b91aaa7c-2989-4d7b-9ac4-22dde58290ed.png)
 ![image](https://user-images.githubusercontent.com/123575472/224223595-55183fa4-db9f-4567-8529-093eef9ce76c.png)
 ![image](https://user-images.githubusercontent.com/123575472/224094977-ded56ef8-f1ee-4e42-9787-06a2636eb248.png)
@@ -1823,10 +1823,10 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=150n W=840n nf=2 m=1
 ![image](https://user-images.githubusercontent.com/123575472/224276595-f5f4a442-851f-4afa-bd15-e4b7ecb9c065.png)
 ![image](https://user-images.githubusercontent.com/123575472/224276791-60536f33-c802-4cf8-8cd1-ecb42a13e04b.png)
 
--**Read gds file in magic layout window:**(use magic -T SKY130A.tech)
+- **Read the align generated gds file in magic layout window:**(use magic -T SKY130A.tech)
 ![image](https://user-images.githubusercontent.com/123575472/224275093-9db69bf4-f4d5-48ad-bbf2-21e1832d2fee.png)
 
--** Magic extracted netlist(edited)**:
+- **Magic extracted netlist(edited)**:
 ```
 * SPICE3 file created from RING_OSC_0.ext - technology: sky130A
 .subckt ring_osc VDD Y GND
@@ -1876,6 +1876,12 @@ V1 VDD GND 1.8
 .GLOBAL GND
 .end
 ```
--**Postlayout simulation**:(which is not correct)
+- **Postlayout simulation**:(which is not correct)
 ![image](https://user-images.githubusercontent.com/123575472/224274676-f0738b54-526d-4b84-b93b-dc0c5e53a3e3.png)
+
+## Tried to change nf values to get simulation output(nf =10)
+![image](https://user-images.githubusercontent.com/123575472/224327765-dc91c119-a344-4932-bed7-429da315f6a1.png)
+![image](https://user-images.githubusercontent.com/123575472/224328295-957cf6a5-20d1-448f-9d11-e4ec6e2ebdb2.png)
+## Still its wrong!!:( HAS TO DO SOME ANALYSIS TO GET OUTPUT.
+
 
