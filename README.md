@@ -1781,4 +1781,24 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
 
 ![image](https://user-images.githubusercontent.com/123575472/224223415-c4ac0974-fba6-466f-ad74-aa47c37cb973.png)
 ## Post-layout using ALIGN
+- **NOTE:
+```
+1.Running ALIGN TOOL Everytime: we start running tool in new terminal run following commands.
+## creating  a python virtualenv
+ python -m venv general
+ source general/bin/activate
+ python -m pip install pip --upgrade
+----------------------------------------------------
+2.Commands to run ALIGN (goto ALIGN-public directory)
+ mkdir work
+ cd work
+ ------------------------------------------------
+3.General syntax to give inputs
+schematic2layout.py <NETLIST_DIR> -p <PDK_DIR> -c
 
+Running a EXAMPLE:
+schematic2layout.py ../examples/telescopic_ota -p ../pdks/FinFET14nm_Mock_PDK/
+
+Running a EXAMPLE on Sky130pdk:
+schematic2layout.py ../ALIGN-pdk-sky130/examples/five_transistor_ota -p ../pdks/SKY130_PDK/
+```
