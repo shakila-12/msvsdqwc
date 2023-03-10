@@ -1527,8 +1527,8 @@ X1 A B C E D F out VDD GND FUN1_TB_0
 ```
 ![image](https://user-images.githubusercontent.com/123575472/222420973-8585c26e-2e7e-4f55-bcfc-bd081402719d.png)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## WEEK-2
+
+# WEEK-2
 ### OPENROAD installation:
 Refer the following link https://theopenroadproject.org/resources/ and the git repo https://github.com/The-OpenROAD-Project
 ![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
@@ -1671,6 +1671,109 @@ A ring oscillator is a device composed of an odd number of NOT gates in a ring, 
 ![image](https://user-images.githubusercontent.com/123575472/224094977-ded56ef8-f1ee-4e42-9787-06a2636eb248.png)
 - **Prelayout netlist**:
 ```
-```
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc_tb.sch
+**.subckt ring_osc_tb Y VDD GND
+*.opin Y
+*.iopin VDD
+*.iopin GND
+x1 VDD Y GND ring_osc
+V1 VDD GND 1.8
+.save i(v1)
+**** begin user architecture code
 
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 5n
+.save all
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  ring_osc/ring_osc.sym # of pins=3
+** sym_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sym
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sch
+.subckt ring_osc VDD Y GND
+*.iopin VDD
+*.iopin GND
+*.opin Y
+XM1 net1 Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 Y GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end
+```
+## Post-layout using magic
+GO to xschem_tb.sch -> simulation-> LVS netlist. Now,open magic folder and run magic -Tsky130A.tech => layout window appears. Go to File->IMPORT SPICE-> open the spice netlist folder and then press V .After checking drcs and routing the final layout is shown below.
+- **postlayout netlist**
+```
+* NGSPICE file created from ring_osc.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# a_n33_n197#
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt ring_osc VDD Y GND
+XXM1 VDD m1_284_866# Y sky130_fd_pr__pfet_01v8_XGS3BL
+XXM2 VDD m1_1778_1068# m1_284_866# sky130_fd_pr__pfet_01v8_XGS3BL
+XXM3 VDD Y m1_1778_1068# sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 GND Y m1_284_866# VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM5 GND m1_284_866# m1_1778_1068# VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM6 GND m1_1778_1068# Y VSUBS sky130_fd_pr__nfet_01v8_648S5X
+.ends
+
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc_tb.sch
+*.subckt ring_osc_tb Y VDD GND
+*.PININFO Y:O VDD:B GND:B
+x1 VDD Y GND ring_osc
+V1 VDD GND 1.8
+.save i(v1)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.tran 0.01n 5n
+.save all
+
+**** end user architecture code
+*.ends
+
+* expanding   symbol:  ring_osc/ring_osc.sym # of pins=3
+** sym_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sym
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/ring_osc/ring_osc.sch
+.subckt ring_osc VDD Y GND
+*.PININFO VDD:B GND:B Y:O
+XM1 net1 Y VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 net2 net1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 Y net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM4 net1 Y GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM5 net2 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+
+.GLOBAL GND
+.end
+```
 
