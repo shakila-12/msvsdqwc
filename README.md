@@ -2066,6 +2066,8 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 - Refer following [repo](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal) for this counter.
 ### Comparator as 1bit ADC:
 - TO understand ADC and comparator, refer the 2 repos [repo1](https://github.com/Sumanyu-Singh/Mixed-Signal-Design-of-3-bit-Flash-Type-ADC)[repo 2](https://github.com/VanshikaTanwar/3-bit_Flash_ADC)
+- Referance of cmos [comparator](https://www.researchgate.net/publication/253237765_Design_of_a_CMOS_Comparator_for_Low_Power_and_High_Speed).
+A comparator acts as the quantizer in the ADCs. Since the comparator is of 1-bit it has only two levels either a ‘1’ or a ‘0’. A ‘1’ implies that VDD = +ve and a ‘0’ implies that -ve . If the input of the comparator is greater than the reference voltage ( Vref ) it has to give an output of ‘1’ and if the comparator input is less than reference voltage then the output of the comparator should be ‘0’. A simple comparator performs the required function efficiently. Given a reference level, a comparator gives an output of VDD when the signal is greater than the reference level and an output of VSS when signal is less than reference level. In this design the Vref  = 0V. The operational amplifier can be used as a comparator. In this comparator design we have used the two stage CMOS OPAMP design technique.
 
 
 
