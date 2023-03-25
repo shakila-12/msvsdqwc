@@ -2070,4 +2070,6 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 A comparator acts as the quantizer in the ADCs. Since the comparator is of 1-bit it has only two levels either a ‘1’ or a ‘0’. A ‘1’ implies that VDD = +ve and a ‘0’ implies that -ve . If the input of the comparator is greater than the reference voltage ( Vref ) it has to give an output of ‘1’ and if the comparator input is less than reference voltage then the output of the comparator should be ‘0’. A simple comparator performs the required function efficiently. Given a reference level, a comparator gives an output of VDD when the signal is greater than the reference level and an output of VSS when signal is less than reference level. In this design the Vref  = 0V. The operational amplifier can be used as a comparator. In this comparator design we have used the two stage CMOS OPAMP design technique.
 
 
+![image](https://user-images.githubusercontent.com/123575472/227735970-5b3e0bf0-548d-4395-ae59-2bd4729a27df.png)
+![image](https://user-images.githubusercontent.com/123575472/227736010-1331755c-3bf1-475f-aa2b-f186f7fddffb.png)
 
