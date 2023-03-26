@@ -2129,3 +2129,37 @@ V4 INN GND 0.9
 - **Prelayout simulation:**
 ![image](https://user-images.githubusercontent.com/123575472/227736010-1331755c-3bf1-475f-aa2b-f186f7fddffb.png)
 
+
+```
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/comparator/adc.sch
+.subckt adc INN INP out VSS VDD
+*.PININFO INN:I INP:I out:O VSS:B VDD:B
+XM1 net1 INN net3 net5 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 net2 INP net3 net6 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM4 net2 net1 VDD net4 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM5 net3 net10 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM6 out net2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM7 out net10 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM8 net10 net10 VDD net7 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM9 net10 net10 VSS net8 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 net1 net1 VDD net9 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+V1 VDD GND 1.8
+.save i(v1)
+V2 VSS GND 0
+.save i(v2)
+V3 INP GND sin(0.9
+.save i(v3)
+V4 INN GND 0.9
+.save i(v4)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.tran 0.01n 50n
+.save all
+
+**** end user architecture code
+.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end
+```
