@@ -2130,7 +2130,7 @@ V4 INN GND 0.9
 ![image](https://user-images.githubusercontent.com/123575472/227758509-e3539cb8-4bfc-4334-af70-4b4d58a5a1d6.png)
 
 As i got above error, the issue is because of connecting bulk of M1,M2 to low voltages.So, connected M1 bulk to Gnd and M2 bulk to source.
-![image](https://user-images.githubusercontent.com/123575472/229425853-29f15d63-f991-474b-9e55-f3e52a40e344.png)
+![image](https://user-images.githubusercontent.com/123575472/229568559-ae6b0a35-f44b-4dc6-9fef-70ac5a3323de.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229416393-7d2d352c-acd6-48ee-845c-1abca014e6f7.png)
 ###### .gds and .lef using klayout:
