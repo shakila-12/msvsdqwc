@@ -2179,4 +2179,8 @@ Now, extract the spice netlist using magic tool.
 ![image](https://user-images.githubusercontent.com/123575472/229419052-b15386c6-61ed-4abf-ad90-d043bf3a6173.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229420522-ccdeab5e-fca5-47cc-aded-e22e4116ddc8.png)
+![image](https://user-images.githubusercontent.com/123575472/229492985-ff64736e-627c-4318-8fcd-85c96edd264d.png)
+![image](https://user-images.githubusercontent.com/123575472/229493052-c903cf7e-db1e-48c3-87cd-ab511cf6e991.png)
+![image](https://user-images.githubusercontent.com/123575472/229500540-f9381f30-914b-4153-a502-b53063868fdd.png)
+
 
