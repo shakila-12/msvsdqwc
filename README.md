@@ -2131,7 +2131,7 @@ V4 INN GND 0.9
 
 As i got above error, the issue is because of connecting bulk of M1,M2 to low voltages.So, connected M1 bulk to Gnd and M2 bulk to source.
 ![image](https://user-images.githubusercontent.com/123575472/229568559-ae6b0a35-f44b-4dc6-9fef-70ac5a3323de.png)
-
+![image](https://user-images.githubusercontent.com/123575472/229492985-ff64736e-627c-4318-8fcd-85c96edd264d.png)
 ![image](https://user-images.githubusercontent.com/123575472/229416393-7d2d352c-acd6-48ee-845c-1abca014e6f7.png)
 ###### .gds and .lef using klayout:
 ![image](https://user-images.githubusercontent.com/123575472/229416954-fbd13d6f-2588-4605-a3fa-6c0a555ef192.png)
@@ -2141,7 +2141,7 @@ Now, extract the spice netlist using magic tool.
 ![image](https://user-images.githubusercontent.com/123575472/229419052-b15386c6-61ed-4abf-ad90-d043bf3a6173.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229420522-ccdeab5e-fca5-47cc-aded-e22e4116ddc8.png)
-![image](https://user-images.githubusercontent.com/123575472/229492985-ff64736e-627c-4318-8fcd-85c96edd264d.png)
+
 ![image](https://user-images.githubusercontent.com/123575472/229500540-f9381f30-914b-4153-a502-b53063868fdd.png)
 
 
