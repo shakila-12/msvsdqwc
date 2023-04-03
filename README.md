@@ -2167,4 +2167,4 @@ V4 INN GND 0.9
 ![image](https://user-images.githubusercontent.com/123575472/227756460-cfb6918d-3d9e-4b1f-996f-bd7d36f02681.png)
 ![image](https://user-images.githubusercontent.com/123575472/227758509-e3539cb8-4bfc-4334-af70-4b4d58a5a1d6.png)
 
-
+As i got above error, the issue is because of connecting bulk of M1,M2 to low voltages.So, connected M1 bulk to Gnd and M2 bulk to source.
