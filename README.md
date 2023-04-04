@@ -2024,7 +2024,7 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 
 
 # WEEK 4
-## TASK:  TO create 1 bit ADC (pre and post layout)and  complete counter using OPENFASOC
+## TASK:  TO create 1 bit ADC (pre and post layout using align)and  to write down dummyverilog code for asynchronous-updown-counter
 - Refer following [repo](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal) for this counter.
 ### Comparator as 1bit ADC:
 - TO understand ADC and comparator, refer the 2 repos [repo1](https://github.com/Sumanyu-Singh/Mixed-Signal-Design-of-3-bit-Flash-Type-ADC)[repo 2](https://github.com/VanshikaTanwar/3-bit_Flash_ADC)
