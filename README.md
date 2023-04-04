@@ -2131,6 +2131,59 @@ V4 INN GND 0.9
 
 As i got above error, the issue is because of connecting bulk of M1,M2 to low voltages.So, connected M1 bulk to Gnd and M2 bulk to source.
 ![image](https://user-images.githubusercontent.com/123575472/229568559-ae6b0a35-f44b-4dc6-9fef-70ac5a3323de.png)
+**Prelayout netlist:**
+```
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/comparator/adc.sch
+**.subckt adc VINN VINP out Vdd GND
+*.ipin VINN
+*.ipin VINP
+*.opin out
+*.iopin Vdd
+*.iopin GND
+XM1 net1 VINN net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 VINP net4 net4 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net2 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 net3 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 out net2 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 out net3 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net3 net3 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net3 net3 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+V1 Vdd GND 1.8
+.save i(v1)
+V3 VINN GND 0.9
+.save i(v3)
+V4 VINP GND sin(0.9 0.9 50Meg)
+.save i(v4)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.tran 0.01n 50n
+.save all
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+```
 ![image](https://user-images.githubusercontent.com/123575472/229492985-ff64736e-627c-4318-8fcd-85c96edd264d.png)
 ![image](https://user-images.githubusercontent.com/123575472/229416393-7d2d352c-acd6-48ee-845c-1abca014e6f7.png)
 ##### .gds and .lef using klayout:
@@ -2141,7 +2194,102 @@ Now, extract the spice netlist using magic tool.
 ![image](https://user-images.githubusercontent.com/123575472/229419052-b15386c6-61ed-4abf-ad90-d043bf3a6173.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229420522-ccdeab5e-fca5-47cc-aded-e22e4116ddc8.png)
+**Postlayout netlist**
+```
+* SPICE3 file created from ADC_0.ext - technology: sky130A
+.subckt adc VINN VINP OUT VDD GND
+X0 OUT li_577_571# m1_914_728# m1_914_728# sky130_fd_pr__pfet_01v8 ad=2.352e+11p pd=2.24e+06u as=1.5708e+12p ps=1.55e+07u w=840000u l=150000u
+X1 m1_914_728# li_577_571# OUT m1_914_728# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X2 m1_742_1568# VINN GND GND sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=2.2512e+12p ps=2.216e+07u w=840000u l=150000u
+X3 GND VINN m1_742_1568# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X4 m2_1434_1428# m2_1434_1428# m1_914_728# m1_914_728# sky130_fd_pr__pfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X5 m1_914_728# m2_1434_1428# m2_1434_1428# m1_914_728# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X6 li_577_571# NMOS_S_25628869_X1_Y1_1680498351_0/a_200_252# GND GND sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X7 GND NMOS_S_25628869_X1_Y1_1680498351_0/a_200_252# li_577_571# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X8 m1_742_1568# m1_742_1568# m1_914_728# m1_914_728# sky130_fd_pr__pfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X9 m1_914_728# m1_742_1568# m1_742_1568# m1_914_728# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X10 li_577_571# m1_742_1568# m1_914_728# m1_914_728# sky130_fd_pr__pfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X11 m1_914_728# m1_742_1568# li_577_571# m1_914_728# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X12 OUT m2_1434_1428# GND GND sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X13 GND m2_1434_1428# OUT GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X14 GND m2_1434_1428# GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X15 m2_1434_1428# m2_1434_1428# GND GND sky130_fd_pr__nfet_01v8 ad=2.352e+11p pd=2.24e+06u as=0p ps=0u w=840000u l=150000u
+X16 GND m2_1434_1428# m2_1434_1428# GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+X17 GND m2_1434_1428# GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+C0 VINP m1_742_1568# 0.02fF
+C1 m1_742_1568# VDD 0.09fF
+C2 VINP m2_1434_1428# 0.00fF
+C3 li_577_571# VINP 0.01fF
+C4 m2_1434_1428# VDD 0.57fF
+C5 li_577_571# VDD 1.57fF
+C6 VINN GND 0.04fF
+C7 m1_914_728# m1_742_1568# 2.43fF
+C8 VINP VDD 0.05fF
+C9 GND m1_742_1568# 0.30fF
+C10 m1_914_728# m2_1434_1428# 2.11fF
+C11 li_577_571# m1_914_728# 2.24fF
+C12 li_577_571# NMOS_S_25628869_X1_Y1_1680498351_0/a_200_252# 0.11fF
+C13 VINN OUT 0.00fF
+C14 GND m2_1434_1428# 0.08fF
+C15 li_577_571# GND 0.23fF
+C16 OUT m1_742_1568# 0.00fF
+C17 GND VINP 0.01fF
+C18 OUT m2_1434_1428# 0.15fF
+C19 GND VDD 0.56fF
+C20 li_577_571# OUT 0.11fF
+C21 OUT VDD 0.09fF
+C22 VINN m1_742_1568# 0.11fF
+C23 VINN m2_1434_1428# 0.05fF
+C24 li_577_571# VINN 0.00fF
+C25 m1_914_728# OUT 0.78fF
+C26 GND OUT 0.02fF
+C27 m2_1434_1428# m1_742_1568# 0.09fF
+C28 li_577_571# m1_742_1568# 0.86fF
+C29 VINN VDD 0.00fF
+C30 li_577_571# m2_1434_1428# 0.32fF
+C31 VINN GND 0.81fF
+C32 m2_1434_1428# GND 3.28fF 
+C33 NMOS_S_25628869_X1_Y1_1680498351_0/a_200_252# GND 0.89fF 
+C34 m1_742_1568# GND 0.39fF 
+C35 OUT GND 0.61fF 
+C36 m1_914_728# SUB 9.41fF 
+.ends
 
+****Added***********
+** sch_path: /home/shakila12/Desktop/pd_rp/week0/inverter/xschem/comparator/adc.sch
+**.subckt adc VINN VINP out Vdd GND
+*.ipin VINN
+*.ipin VINP
+*.opin out
+*.iopin Vdd
+*.iopin GND
+XM1 net1 VINN net4 GND sky130_fd_pr__nfet_01v8 
+XM2 net2 VINP net4 net4 sky130_fd_pr__nfet_01v8 
+XM4 net2 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 
+XM5 net4 net3 GND GND sky130_fd_pr__nfet_01v8 
+XM6 out net2 Vdd Vdd sky130_fd_pr__pfet_01v8 
+XM7 out net3 GND GND sky130_fd_pr__nfet_01v8 
+XM8 net3 net3 Vdd Vdd sky130_fd_pr__pfet_01v8
+XM9 net3 net3 GND GND sky130_fd_pr__nfet_01v8 
+XM3 net1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8 
+V1 Vdd GND 1.8
+.save i(v1)
+V3 VINN GND 0.9
+.save i(v3)
+V4 VINP GND sin(0.9 0.9 50Meg)
+.save i(v4)
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.control
+save all
+tran 0.01n 50n
+.endc
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+```
 ![image](https://user-images.githubusercontent.com/123575472/229500540-f9381f30-914b-4153-a502-b53063868fdd.png)
 ### Asynchronous counter
 
