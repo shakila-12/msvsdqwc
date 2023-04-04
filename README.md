@@ -2143,6 +2143,12 @@ Now, extract the spice netlist using magic tool.
 ![image](https://user-images.githubusercontent.com/123575472/229420522-ccdeab5e-fca5-47cc-aded-e22e4116ddc8.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229500540-f9381f30-914b-4153-a502-b53063868fdd.png)
+### Asynchronous counter
+
+The ckt diagram and its prelayout netlist and simulations are shown below.
+![image](https://user-images.githubusercontent.com/123575472/229878403-8c9be365-a2a6-4d17-b558-b2fac4b2d8aa.png)
+
+![image](https://user-images.githubusercontent.com/123575472/229878110-257beab0-ed4b-414d-9633-6e2345f21a4a.png)
 
 ###  Top-level Dummy verilog file to run OpenFASOC flow
 ```
