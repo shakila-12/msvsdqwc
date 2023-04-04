@@ -1,11 +1,11 @@
 # VSD Mixed-signal PD Research Program
 # Index
-- Week 1
-- Week 2
-- Week 3
-- Week 4
-- Week 5
-- Week 6
+- WEEK 1(https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-1)
+- WEEK 2()
+- WEEK 3()
+- WEEK 4()
+- WEEK 5()
+- WEEK 6()
 # WEEK 1
 ## Open source tool installation
 
