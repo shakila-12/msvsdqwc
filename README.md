@@ -2024,7 +2024,7 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 
 
 # WEEK 4
-## TASK:  TO create 1 bit ADC (pre and post layout using align)and  to write down dummyverilog code for asynchronous-updown-counter
+## TASK: To create 1 bit ADC (pre and post layout)and  to write down dummyverilog code for asynchronous-updown-counter
 - Refer following [repo](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal) for this counter.
 ### Comparator as 1bit ADC:
 - TO understand ADC and comparator, refer the 2 repos [repo1](https://github.com/Sumanyu-Singh/Mixed-Signal-Design-of-3-bit-Flash-Type-ADC)[repo 2](https://github.com/VanshikaTanwar/3-bit_Flash_ADC)
@@ -2133,7 +2133,7 @@ As i got above error, the issue is because of connecting bulk of M1,M2 to low vo
 ![image](https://user-images.githubusercontent.com/123575472/229568559-ae6b0a35-f44b-4dc6-9fef-70ac5a3323de.png)
 ![image](https://user-images.githubusercontent.com/123575472/229492985-ff64736e-627c-4318-8fcd-85c96edd264d.png)
 ![image](https://user-images.githubusercontent.com/123575472/229416393-7d2d352c-acd6-48ee-845c-1abca014e6f7.png)
-###### .gds and .lef using klayout:
+##### .gds and .lef using klayout:
 ![image](https://user-images.githubusercontent.com/123575472/229416954-fbd13d6f-2588-4605-a3fa-6c0a555ef192.png)
 ![image](https://user-images.githubusercontent.com/123575472/229417078-535e8b0c-0803-471d-83ab-9ebc69b2356a.png)
 
