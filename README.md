@@ -1,5 +1,12 @@
 # VSD Mixed-signal PD Research Program
-# WEEK 0
+# Index
+- Week 1
+- Week 2
+- Week 3
+- Week 4
+- Week 5
+- Week 6
+# WEEK 1
 ## Open source tool installation
 
 
@@ -621,7 +628,7 @@ Mismatch occurs due to the extracted parasitic capacitances generated in the pos
 
 ![image](https://user-images.githubusercontent.com/123575472/221086596-a3193dfc-77e1-4416-8a38-1ad1d817d62f.png)
 ![image](https://user-images.githubusercontent.com/123575472/221086905-cf1cfcc0-763a-41d4-b46a-1a478a7be46a.png)
-# WEEK-1
+# WEEK-2
 - **Installation of ALIGN is completed( steps are given above).**
 - Note: Follow the rules in the below link , which helps to complete the task.
         
@@ -1490,7 +1497,7 @@ X1 A B C E D F out VDD GND FUN1_TB_0
 ![image](https://user-images.githubusercontent.com/123575472/222420973-8585c26e-2e7e-4f55-bcfc-bd081402719d.png)
 
 
-# WEEK-2
+# WEEK-3
 ### OPENROAD installation:
 Refer the following link https://theopenroadproject.org/resources/ and the git repo https://github.com/The-OpenROAD-Project
 ![image](https://user-images.githubusercontent.com/123575472/222634309-270cc874-0175-4152-b787-d601c6d35017.png)
@@ -1622,7 +1629,7 @@ Routing is also divided into two phases: global routing and detailed routing. Ri
     ![image](https://user-images.githubusercontent.com/123575472/224007714-b6fde6cd-2b79-4796-9efd-3429629fb310.png)
 
 
-# WEEK 3
+# WEEK 4
 ## TASK: To draw a circuit of RING OSCILLATOR and perform its characteristics
 A ring oscillator is a device composed of an odd number of NOT gates in a ring, whose output oscillates between two voltage levels, representing true and false. The NOT gates, or inverters, are attached in a chain and the output of the last inverter is fed back into the first.
 ![image](https://user-images.githubusercontent.com/123575472/223944696-2b5926af-59cb-4ee6-a26c-f630a5b3072a.png)
@@ -2023,7 +2030,7 @@ XM6 Y net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W
 ![image](https://user-images.githubusercontent.com/123575472/224335090-13c44e2a-7cf0-4272-91cf-2c5809e55cc9.png)
 
 
-# WEEK 4
+# WEEK 5
 ## TASK: To create 1 bit ADC (pre and post layout)and  to write down dummyverilog code for asynchronous-updown-counter
 - Refer following [repo](https://github.com/syedimaduddin/4-bit_Asynchronous_Up_Counter_using_Mixed-Signal) for this counter.
 ### Comparator as 1bit ADC:
