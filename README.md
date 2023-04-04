@@ -6,7 +6,7 @@
 - [WEEK 3](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-3)
 - [WEEK 4](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-4)
 - [WEEK 5](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-5)
-- [WEEK 6]()
+- [WEEK 6](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-6)
 # WEEK 1
 ## Open source tool installation
 
