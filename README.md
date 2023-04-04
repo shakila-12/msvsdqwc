@@ -2147,8 +2147,9 @@ Now, extract the spice netlist using magic tool.
 
 The ckt diagram and its prelayout netlist and simulations are shown below.
 ![image](https://user-images.githubusercontent.com/123575472/229878403-8c9be365-a2a6-4d17-b558-b2fac4b2d8aa.png)
+![image](https://user-images.githubusercontent.com/123575472/229879512-39316f3d-6002-4f66-bb13-ba0e061d4367.png)
 
-![image](https://user-images.githubusercontent.com/123575472/229878110-257beab0-ed4b-414d-9633-6e2345f21a4a.png)
+
 
 ###  Top-level Dummy verilog file to run OpenFASOC flow
 ```
