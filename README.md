@@ -2417,3 +2417,4 @@ module COMPARATOR(
   );
 endmodule  
 ```
+## WEEK 6
