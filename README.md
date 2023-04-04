@@ -1,9 +1,9 @@
 # VSD Mixed-signal PD Research Program
 # Index
-- [WEEK 1](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-1)
 
+- [WEEK 1](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-1)
 - [WEEK 2](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-2)
-- [WEEK 3]()
+- [WEEK 3](https://github.com/shakila-12/msvsdqwc/blob/main/README.md#week-3)
 - [WEEK 4]()
 - [WEEK 5]()
 - [WEEK 6]()
