@@ -2194,6 +2194,7 @@ Now, extract the spice netlist using magic tool.
 ![image](https://user-images.githubusercontent.com/123575472/229419052-b15386c6-61ed-4abf-ad90-d043bf3a6173.png)
 
 ![image](https://user-images.githubusercontent.com/123575472/229420522-ccdeab5e-fca5-47cc-aded-e22e4116ddc8.png)
+
 **Postlayout netlist**
 ```
 * SPICE3 file created from ADC_0.ext - technology: sky130A
