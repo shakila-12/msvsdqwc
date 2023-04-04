@@ -2144,26 +2144,43 @@ Now, extract the spice netlist using magic tool.
 
 ![image](https://user-images.githubusercontent.com/123575472/229500540-f9381f30-914b-4153-a502-b53063868fdd.png)
 
-### Dummy verilog file to run OpenFASOC flow
+###  Top-level Dummy verilog file to run OpenFASOC flow
 ```
 module analog_async_up_down(
-      input vinn
-      output out
+      input VINN
+      output OUT
       );
 
    wire ring_adc;
    //(Instantiating the ring_osc and adc modules);
   
    RING_OSCILLATOR ring_osc(
-      .vinp(ring_adc)
+      .VINP(ring_adc)
       );
       
       
    COMPARATOR one_bit_adc(
-      .vinn(vinn),
-      .vinp(ring_adc),
-      .out(out)
+      .VINN(VINN),
+      .VINP(ring_adc),
+      .OUT(OUT)
       );
       
 endmodule           
+```
+
+#### verilog code for RING OSCILLATOR
+```
+module RING_OSCILLATOR(
+  output VINP
+ );
+endmodule
+```
+#### verilog code for one bit adc(comparator)
+```
+module COMPARATOR(
+  input VINN,
+  input VINP,
+  output OUT
+  );
+endmodule  
 ```
