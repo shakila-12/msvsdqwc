@@ -2379,7 +2379,7 @@ XM15 VINP net6 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2)
 
 ###  Top-level Dummy verilog file to run OpenFASOC flow
 ```
-module analog_async_up_down(
+module analog_async_up_down_counter(
       input VINN
       output OUT
       );
