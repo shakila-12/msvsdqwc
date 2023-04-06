@@ -2387,12 +2387,12 @@ module analog_async_up_down_counter(
    wire ring_adc;
    //(Instantiating the ring_osc and adc modules);
   
-   RING_OSCILLATOR ring_osc(
+    ring_osc ring_oscillator(
       .VINP(ring_adc)
       );
       
       
-   COMPARATOR one_bit_adc(
+   adc one_bit_adc(
       .VINN(VINN),
       .VINP(ring_adc),
       .OUT(OUT)
@@ -2403,14 +2403,14 @@ endmodule
 
 #### verilog code for RING OSCILLATOR
 ```
-module RING_OSCILLATOR(
+module ring_osc(
   output VINP
  );
 endmodule
 ```
 #### verilog code for one bit adc(comparator)
 ```
-module COMPARATOR(
+module adc(
   input VINN,
   input VINP,
   output OUT
