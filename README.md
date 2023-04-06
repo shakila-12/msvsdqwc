@@ -2418,3 +2418,5 @@ module adc(
 endmodule  
 ```
 ## WEEK 6
+![image](https://user-images.githubusercontent.com/123575472/230471515-1a43be46-3126-48ff-95a8-7f9a1bb3e07c.png)
+
