@@ -2418,10 +2418,6 @@ module adc(
 endmodule  
 ```
 ## WEEK 6
-![image](https://user-images.githubusercontent.com/123575472/230471515-1a43be46-3126-48ff-95a8-7f9a1bb3e07c.png)
-![image](https://user-images.githubusercontent.com/123575472/230472960-aaa154f7-1c03-4c28-bf95-85a14e6399fb.png)
-The above warning will be ignored. orelse got to the lef as mentioned above and remove .
-![image](https://user-images.githubusercontent.com/123575472/230553886-5bd4015b-dea2-4602-886a-fa5ebeecc900.png)
-![image](https://user-images.githubusercontent.com/123575472/230554153-83468158-d038-4c2a-a296-edf40533ed5a.png)
+After creating dummy verilog , take the following [github](https://github.com/sanampudig/OpenFASoC) and official openroad website as a reference and has to run the physical design flow.
 
 
