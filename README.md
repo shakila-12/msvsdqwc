@@ -2420,4 +2420,4 @@ endmodule
 ## WEEK 6
 ![image](https://user-images.githubusercontent.com/123575472/230471515-1a43be46-3126-48ff-95a8-7f9a1bb3e07c.png)
 ![image](https://user-images.githubusercontent.com/123575472/230472960-aaa154f7-1c03-4c28-bf95-85a14e6399fb.png)
-The above warning will be ignored. orelse got to the lef as mentioned abbove and remove or uncomment.
+The above warning will be ignored. orelse got to the lef as mentioned above and remove .
