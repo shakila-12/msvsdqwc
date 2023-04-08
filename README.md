@@ -2428,6 +2428,9 @@ After creating dummy verilog , take the following [github](https://github.com/sa
   ![image](https://user-images.githubusercontent.com/123575472/230703324-9bdde7f3-360f-48fe-bf62-8dca2f90e3b7.png)
   ![image](https://user-images.githubusercontent.com/123575472/230703368-06a5d0fb-c5cd-4e47-b3ef-9ac1f3ca2624.png)
 - PLACEMENT:
+![image](https://user-images.githubusercontent.com/123575472/230715225-6bf2be25-e6b5-4109-b1e6-4edbe6bd2125.png)
+**Note**:As macros overlap, manual_macro.tcl with its orientation is done.
+![image](https://user-images.githubusercontent.com/123575472/230716244-4de1c816-cd8d-4d90-869f-36d247ed4cdd.png)
 
 
 
