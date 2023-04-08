@@ -2380,7 +2380,7 @@ XM15 VINP net6 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2)
 ###  Top-level Dummy verilog file to run OpenFASOC flow
 ```
 module analog_async_up_down_counter(
-      input VINN
+      input VINN,
       output OUT
       );
 
@@ -2419,5 +2419,15 @@ endmodule
 ```
 ## WEEK 6
 After creating dummy verilog , take the following [github](https://github.com/sanampudig/OpenFASoC) and official openroad website as a reference and has to run the physical design flow.
+
+![image](https://user-images.githubusercontent.com/123575472/230702665-4e7e4932-621c-4779-9eef-28c4d333424d.png)
+![image](https://user-images.githubusercontent.com/123575472/230702964-29ba5420-c9b9-4f5e-bcc8-f6ef33108b23.png)
+![image](https://user-images.githubusercontent.com/123575472/230703003-d410a8be-7543-415d-9fa4-1c47e541dd39.png)
+- FLOORPLAN:
+  ![image](https://user-images.githubusercontent.com/123575472/230703304-056df7f8-a27f-45b0-98ca-671f6dea1bf5.png)
+  ![image](https://user-images.githubusercontent.com/123575472/230703324-9bdde7f3-360f-48fe-bf62-8dca2f90e3b7.png)
+  ![image](https://user-images.githubusercontent.com/123575472/230703368-06a5d0fb-c5cd-4e47-b3ef-9ac1f3ca2624.png)
+- PLACEMENT:
+
 
 
