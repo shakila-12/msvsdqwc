@@ -2420,19 +2420,43 @@ endmodule
 ## WEEK 6
 After creating dummy verilog , take the following [github](https://github.com/sanampudig/OpenFASoC) and official openroad website as a reference and has to run the physical design flow.
 
-![image](https://user-images.githubusercontent.com/123575472/230702665-4e7e4932-621c-4779-9eef-28c4d333424d.png)
-![image](https://user-images.githubusercontent.com/123575472/230702964-29ba5420-c9b9-4f5e-bcc8-f6ef33108b23.png)
-![image](https://user-images.githubusercontent.com/123575472/230703003-d410a8be-7543-415d-9fa4-1c47e541dd39.png)
-- FLOORPLAN:
-  ![image](https://user-images.githubusercontent.com/123575472/230703304-056df7f8-a27f-45b0-98ca-671f6dea1bf5.png)
-  ![image](https://user-images.githubusercontent.com/123575472/230703324-9bdde7f3-360f-48fe-bf62-8dca2f90e3b7.png)
-  ![image](https://user-images.githubusercontent.com/123575472/230703368-06a5d0fb-c5cd-4e47-b3ef-9ac1f3ca2624.png)
-- PLACEMENT:
-![image](https://user-images.githubusercontent.com/123575472/230715225-6bf2be25-e6b5-4109-b1e6-4edbe6bd2125.png)
-**Note**:As macros overlap, manual_macro.tcl with its orientation is done.
-![image](https://user-images.githubusercontent.com/123575472/230716244-4de1c816-cd8d-4d90-869f-36d247ed4cdd.png)
-![image](https://user-images.githubusercontent.com/123575472/230723603-d7ef7316-2aba-48d9-b393-a53d746eaeb4.png)
+![image](https://user-images.githubusercontent.com/123575472/232212408-35c8e8eb-59c0-4e7c-8a8e-2e358c3f419b.png)
+![image](https://user-images.githubusercontent.com/123575472/232212489-dd0bd920-6f69-4887-9b22-496429650302.png)
+![image](https://user-images.githubusercontent.com/123575472/232212572-0ed4cc87-de53-41d2-a845-7894864a1d45.png)
+![image](https://user-images.githubusercontent.com/123575472/232212666-ffd0f701-1b48-4d9d-9366-1b746e6e8eb5.png)
+![image](https://user-images.githubusercontent.com/123575472/232212754-aad21cd3-520a-457b-852b-6e80b06c0e88.png)
 
-![image](https://user-images.githubusercontent.com/123575472/230721728-6da8202a-e93f-4bd4-9f98-a7a8c6f1a060.png)
+
+######################################################
+## Synthesis:
+![image](https://user-images.githubusercontent.com/123575472/232210180-e5b0069a-c28a-4458-b321-cf90bf969042.png)
+![image](https://user-images.githubusercontent.com/123575472/232210278-16563f02-9148-4b37-90c0-aff3b5c87ce3.png)
+## Floorplan:
+![image](https://user-images.githubusercontent.com/123575472/232210323-3436fff7-c8d4-4c7c-b5dc-085b965e9a36.png)
+![image](https://user-images.githubusercontent.com/123575472/232210343-96774a3d-0a1f-4fb6-b29d-b874f2e115a0.png)
+![image](https://user-images.githubusercontent.com/123575472/232210385-f4df80c1-cac4-4a63-9265-f007fdcad614.png)
+## Placement
+![image](https://user-images.githubusercontent.com/123575472/232210425-9c2b015b-d7b1-453e-8949-0ed2e8a28f60.png)
+![image](https://user-images.githubusercontent.com/123575472/232210446-eae872f5-ca46-4681-ae93-b2431abbebfe.png)
+![image](https://user-images.githubusercontent.com/123575472/232210463-2308d64a-3922-4a65-b226-9f3580d766cf.png)
+![image](https://user-images.githubusercontent.com/123575472/232210481-e6bac0e1-74f1-4558-9326-f4ddcdd093b2.png)
+![image](https://user-images.githubusercontent.com/123575472/232210521-698bd2ef-1727-4455-844d-d43705b5553d.png)
+## cts
+![image](https://user-images.githubusercontent.com/123575472/232210555-c9f3f4ec-fe32-4425-83b6-365dbae7d80d.png)
+## Routing
+![image](https://user-images.githubusercontent.com/123575472/232210596-1181d37a-1678-4399-b2db-f8a97dc2db4f.png)
+![image](https://user-images.githubusercontent.com/123575472/232210634-42217611-b044-4554-b48f-92f0531e91c1.png)
+![image](https://user-images.githubusercontent.com/123575472/232210656-8aa566bb-a38a-4e08-ae6b-d13d3881463d.png)
+![image](https://user-images.githubusercontent.com/123575472/232210678-10716c90-9b06-4d36-981d-b7c735bfc449.png)
+## 
+![image](https://user-images.githubusercontent.com/123575472/232211566-b83d9a47-e81b-41ff-afa5-0f3274edf638.png)
+![image](https://user-images.githubusercontent.com/123575472/232211748-0744b165-dc17-4247-b39d-741593bd6485.png)
+![image](https://user-images.githubusercontent.com/123575472/232211875-263e07f7-cebd-4122-8f28-75aa02078fbd.png)
+![image](https://user-images.githubusercontent.com/123575472/232212161-7030a9ad-35f3-43f1-8606-c6a1673abb0d.png)
+
+
+
+
+
 
 
