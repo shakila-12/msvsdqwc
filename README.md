@@ -2454,6 +2454,7 @@ After creating dummy verilog , take the following [github](https://github.com/sa
 ![image](https://user-images.githubusercontent.com/123575472/232211875-263e07f7-cebd-4122-8f28-75aa02078fbd.png)
 ![image](https://user-images.githubusercontent.com/123575472/232212161-7030a9ad-35f3-43f1-8606-c6a1673abb0d.png)
 
+![image](https://user-images.githubusercontent.com/123575472/232213311-cc0a3790-e144-4f50-b756-d9742220f4fb.png)
 
 
 
